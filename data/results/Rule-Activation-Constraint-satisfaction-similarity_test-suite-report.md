@@ -3,8 +3,8 @@ Engine: ODRLEngineMultipleSteps <br>
 Evaluator: ODRLEvaluator <br>
 Comparison metric: Rule-Activation-Constraint-satisfaction-similarity <br>
 The total Evaluation took undefined ms. <br>
-There were 61 ODRL evaluations that succeeded. <br>
-There were 60 ODRL evaluations correct compared to the Expected Compliance Report. <br>
+There were 62 ODRL evaluations that succeeded. <br>
+There were 61 ODRL evaluations correct compared to the Expected Compliance Report. <br>
 | Test case ID | Scenario | Evaluation status | Comparison status |
 |-|-|-|-|
 |[urn:uuid:e2123eb7-0707-4f24-bcc0-9d61dd9088a9](../test_cases/testcase-001-alice.ttl)|Any request results into yes (Alice Request).|true|true|
@@ -68,3 +68,4 @@ There were 60 ODRL evaluations correct compared to the Expected Compliance Repor
 |[urn:uuid:1c47df55-a53d-4740-93a8-614fc3ea9a1b](../test_cases/testcase-059-nonset.ttl)|Read request from Alice to resource X returns into yes, if duty is not violated (Alice Request Read X - duty unknown).|true|true|
 |[urn:uuid:211654bf-86e1-42f6-8f20-cd08e3c3992e](../test_cases/testcase-060-fulfilled.ttl)|Read request from Alice to resource X returns into yes, if duty is not violated (Alice Request Read X- duty fulfilled).|true|true|
 |[urn:uuid:5b372c04-ceb8-48bd-b4b8-cb6380683374](../test_cases/testcase-061-violated.ttl)|Read request from Alice to resource X returns into yes, if duty is not violated (Alice Request Read X - duty violated).|true|false|
+|[urn:uuid:9c052f5d-0788-4352-b957-322b432b1bfa](../test_cases/testcase-062-big-policy.ttl)|Read request from Alice to resource X on weekdays from 9-17 in 2024 returns into yes (Alice Request Read X).|true|true|
