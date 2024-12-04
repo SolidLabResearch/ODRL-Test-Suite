@@ -1,0 +1,13 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/>.
+@prefix ex: <http://example.org/>.
+@prefix temp: <http://example.com/request/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix report: <http://example.com/report/temp/>.
+
+<urn:uuid:4cbd8f38-348b-4b09-8e1a-04b47c97ad78> a odrl:Set;
+    dct:description "Everybody can do everything.";
+    dct:source <https://github.com/SolidLabResearch/ODRL-Test-Suite/>;
+    odrl:permission <urn:uuid:72e248bf-5f4f-472f-af76-8beca297415c>.
+<urn:uuid:72e248bf-5f4f-472f-af76-8beca297415c> a odrl:Permission.

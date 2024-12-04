@@ -1,0 +1,15 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/>.
+@prefix ex: <http://example.org/>.
+@prefix temp: <http://example.com/request/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix report: <http://example.com/report/temp/>.
+
+<urn:uuid:df1566c9-a18b-444f-a1fa-98b976d411eb> a odrl:Request;
+    dct:description "Requesting Party BOB requests to READ resource X.";
+    odrl:permission <urn:uuid:abaf6782-4094-4010-a8b4-8cd70f008039>.
+<urn:uuid:abaf6782-4094-4010-a8b4-8cd70f008039> a odrl:Permission;
+    odrl:assignee ex:bob;
+    odrl:action odrl:read;
+    odrl:target ex:x.

@@ -1,0 +1,15 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/>.
+@prefix ex: <http://example.org/>.
+@prefix temp: <http://example.com/request/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix report: <http://example.com/report/temp/>.
+
+<urn:uuid:4089cf37-8cb0-49e9-a5a4-022cc1b2b749> a odrl:Request;
+    dct:description "Requesting Party ALICE requests to SELL resource X.";
+    odrl:permission <urn:uuid:918e0608-59cd-4f69-8614-679f23f0bb7e>.
+<urn:uuid:918e0608-59cd-4f69-8614-679f23f0bb7e> a odrl:Permission;
+    odrl:assignee ex:alice;
+    odrl:action odrl:sell;
+    odrl:target ex:x.
