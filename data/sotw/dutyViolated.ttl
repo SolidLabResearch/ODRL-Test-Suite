@@ -1,0 +1,20 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/>.
+@prefix ex: <http://example.org/>.
+@prefix temp: <http://example.com/request/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix report: <http://example.com/report/temp/>.
+
+<urn:uuid:9187bb05-519d-497c-8f4d-83492678b3e4> a ex:Sotw;
+    ex:includes temp:currentTime, <urn:uuid:517d1bd4-fcae-46f9-a2a3-414da2cf4fe1>.
+temp:currentTime dct:issued "2024-02-12T11:20:10.999Z"^^xsd:dateTime.
+<urn:uuid:517d1bd4-fcae-46f9-a2a3-414da2cf4fe1> a report:PolicyReport;
+    dct:created "2024-02-12T11:20:10.999Z"^^xsd:dateTime;
+    report:policy <urn:uuid:5aa7f98c-65e0-4ff2-9846-40203203a58a>;
+    report:ruleReport <urn:uuid:6122101e-a4d6-4e1a-9e35-a3ed124a09b8>.
+<urn:uuid:6122101e-a4d6-4e1a-9e35-a3ed124a09b8> a report:DutyReport;
+    report:attemptState report:Attempted;
+    report:rule <urn:uuid:a0b12cb7-d3a1-4953-86da-f59a597615d2>;
+    report:performanceState report:Unperformed;
+    report:deonticState report:Violated.
