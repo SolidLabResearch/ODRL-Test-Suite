@@ -7,6 +7,7 @@
 @prefix report: <http://example.com/report/temp/>.
 
 <urn:uuid:e4b538e6-2613-4de4-8930-48fee524aa40> a odrl:Set;
+    odrl:uid <urn:uuid:e4b538e6-2613-4de4-8930-48fee524aa40> ;
     dct:description "Bob explicitely use nothing.";
     dct:source <https://github.com/SolidLabResearch/ODRL-Test-Suite/>;
     odrl:prohibition <urn:uuid:9477c997-adc1-4d64-a12c-fa9e0f6b80f0>.

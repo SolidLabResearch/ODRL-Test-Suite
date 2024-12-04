@@ -7,6 +7,7 @@
 @prefix report: <http://example.com/report/temp/>.
 
 <urn:uuid:4089cf37-8cb0-49e9-a5a4-022cc1b2b749> a odrl:Request;
+    odrl:uid <urn:uuid:4089cf37-8cb0-49e9-a5a4-022cc1b2b749> ;
     dct:description "Requesting Party ALICE requests to SELL resource X.";
     odrl:permission <urn:uuid:918e0608-59cd-4f69-8614-679f23f0bb7e>.
 <urn:uuid:918e0608-59cd-4f69-8614-679f23f0bb7e> a odrl:Permission;

@@ -7,6 +7,7 @@
 @prefix report: <http://example.com/report/temp/>.
 
 <urn:uuid:715d33b9-5222-4a73-a2ad-9899066b4fd7> a odrl:Set;
+    odrl:uid <urn:uuid:715d33b9-5222-4a73-a2ad-9899066b4fd7> ;
     dct:description "Only Alice can use everything.";
     dct:source <https://github.com/SolidLabResearch/ODRL-Test-Suite/>;
     odrl:permission <urn:uuid:cb04c08b-e956-4f74-b89a-f87b6f658a90>.

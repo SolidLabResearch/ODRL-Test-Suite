@@ -6,9 +6,12 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <http://example.com/report/temp/>.
 
-<urn:uuid:4cbd8f38-348b-4b09-8e1a-04b47c97ad78> a odrl:Set;
-    odrl:uid <urn:uuid:4cbd8f38-348b-4b09-8e1a-04b47c97ad78>;
-    dct:description "Everybody can do everything.";
+<urn:uuid:f42a700b-3314-4cf0-8b8d-1581f203cfa1> a odrl:Set;
+    odrl:uid <urn:uuid:f42a700b-3314-4cf0-8b8d-1581f203cfa1> ;
+    dct:description "Alice can only read x.";
     dct:source <https://github.com/SolidLabResearch/ODRL-Test-Suite/>;
-    odrl:permission <urn:uuid:72e248bf-5f4f-472f-af76-8beca297415c>.
-<urn:uuid:72e248bf-5f4f-472f-af76-8beca297415c> a odrl:Permission.
+    odrl:permission <urn:uuid:69d57d36-74e5-443c-bae5-30159b0cbd3e>.
+<urn:uuid:69d57d36-74e5-443c-bae5-30159b0cbd3e> a odrl:Permission;
+    odrl:assignee ex:alice;
+    odrl:action odrl:read;
+    odrl:target ex:x.

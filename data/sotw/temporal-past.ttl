@@ -6,6 +6,6 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <http://example.com/report/temp/>.
 
-<urn:uuid:d63ea76e-0aed-4e4e-9a8c-0b7083ebc6e2> a ex:Sotw;
+<urn:uuid:192620fa-06d9-447b-adbd-bd1ece4f9b12> a ex:Sotw;
     ex:includes temp:currentTime.
-temp:currentTime dct:issued "2024-02-12T11:20:10.999Z"^^xsd:dateTime.
+temp:currentTime dct:issued "2017-02-12T11:20:10.999Z"^^xsd:dateTime.
