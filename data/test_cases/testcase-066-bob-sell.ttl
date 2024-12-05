@@ -1,0 +1,49 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/>.
+@prefix ex: <http://example.org/>.
+@prefix temp: <http://example.com/request/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix report: <http://example.com/report/temp/>.
+
+<urn:uuid:f9648615-bb2f-4d74-8f87-e2da0d327932> a ex:TestCase;
+    dct:title "Read request from people in party collection to resource X in 2024 returns into yes (Alice Request Read X - past).";
+    ex:policy <urn:uuid:cc4995de-9c5e-4e12-9039-698506f6ab1c>;
+    ex:request <urn:uuid:b7306adc-3f51-4ed4-b9fb-1864c2f1bdc9>;
+    ex:sotw <urn:uuid:da98666e-e80d-429a-a839-1575f85a9b3c>;
+    ex:expectedReport <urn:uuid:26f4885f-fa29-4fef-8b3d-848f64ca85a9>.
+<urn:uuid:8c5b00bc-6d23-4222-bab6-8fe587443c9b> a report:ConstraintReport;
+    report:constraint <urn:uuid:6e8d7da2-0c51-4fab-a863-5e885a4b0f64>;
+    report:constraintLeftOperand "2024-02-12T11:20:10.999Z"^^xsd:dateTime;
+    report:constraintOperator odrl:lt;
+    report:constraintRightOperand "2024-12-31T23:59:59.000Z"^^xsd:dateTime;
+    report:satisfactionState report:Satisfied.
+<urn:uuid:af8066cf-72e2-4591-9fc9-2bc69c93d339> a report:ConstraintReport;
+    report:constraint <urn:uuid:c946aac6-dac5-4450-8bd5-fae5f235b6e9>;
+    report:constraintLeftOperand "2024-02-12T11:20:10.999Z"^^xsd:dateTime;
+    report:constraintOperator odrl:gt;
+    report:constraintRightOperand "2024-01-01T00:00:00.000Z"^^xsd:dateTime;
+    report:satisfactionState report:Satisfied.
+<urn:uuid:17d2bdcf-8890-4ec4-95b1-30313fb92068> a report:ConstraintReport;
+    report:constraint <urn:uuid:553d2546-a1bb-4e05-af99-95cef8c3b750>;
+    report:constraintLogicalOperand odrl:and;
+    report:premiseReport <urn:uuid:8c5b00bc-6d23-4222-bab6-8fe587443c9b>, <urn:uuid:af8066cf-72e2-4591-9fc9-2bc69c93d339>;
+    report:satisfactionState report:Satisfied.
+<urn:uuid:26f4885f-fa29-4fef-8b3d-848f64ca85a9> a report:PolicyReport;
+    dct:created "2024-02-12T11:20:10.999Z"^^xsd:dateTime;
+    report:policy <urn:uuid:cc4995de-9c5e-4e12-9039-698506f6ab1c>;
+    report:policyRequest <urn:uuid:b7306adc-3f51-4ed4-b9fb-1864c2f1bdc9>;
+    report:ruleReport <urn:uuid:154219ca-71a2-43c0-99e6-3e3cebbf5939>.
+<urn:uuid:154219ca-71a2-43c0-99e6-3e3cebbf5939> a report:PermissionReport;
+    report:attemptState report:Attempted;
+    report:rule <urn:uuid:38578227-70b7-4649-980d-661a57e91b72>;
+    report:ruleRequest <urn:uuid:057e7c34-57e7-473c-972c-d80a2a7b32b1>;
+    report:premiseReport <urn:uuid:e486537e-0656-4f10-a218-050c7b4b509e>, <urn:uuid:e950f382-f0f2-4ffd-ab55-b46d12a46c21>, <urn:uuid:6effdc2e-d26e-4c7b-ac6a-19b7c0ffa709>, <urn:uuid:17d2bdcf-8890-4ec4-95b1-30313fb92068>;
+    report:conditionReport <urn:uuid:ef7b885c-3322-4f79-90d6-aeb6c7e682ec>;
+    report:activationState report:Inactive.
+<urn:uuid:e486537e-0656-4f10-a218-050c7b4b509e> a report:TargetReport;
+    report:satisfactionState report:Satisfied.
+<urn:uuid:e950f382-f0f2-4ffd-ab55-b46d12a46c21> a report:PartyReport;
+    report:satisfactionState report:Unsatisfied.
+<urn:uuid:6effdc2e-d26e-4c7b-ac6a-19b7c0ffa709> a report:ActionReport;
+    report:satisfactionState report:Unsatisfied.
