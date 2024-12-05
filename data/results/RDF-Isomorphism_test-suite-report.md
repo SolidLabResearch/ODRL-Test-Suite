@@ -3,8 +3,8 @@ Engine: ODRLEngineMultipleSteps <br>
 Evaluator: ODRLEvaluator <br>
 Comparison metric: RDF-Isomorphism <br>
 The total Evaluation took undefined ms. <br>
-There were 62 ODRL evaluations that succeeded. <br>
-There were 29 ODRL evaluations correct compared to the Expected Compliance Report. <br>
+There were 68 ODRL evaluations that succeeded. <br>
+There were 31 ODRL evaluations correct compared to the Expected Compliance Report. <br>
 | Test case ID | Scenario | Evaluation status | Comparison status |
 |-|-|-|-|
 |[urn:uuid:e2123eb7-0707-4f24-bcc0-9d61dd9088a9](../test_cases/testcase-001-alice.ttl)|Any request results into yes (Alice Request).|true|false|
@@ -69,3 +69,9 @@ There were 29 ODRL evaluations correct compared to the Expected Compliance Repor
 |[urn:uuid:211654bf-86e1-42f6-8f20-cd08e3c3992e](../test_cases/testcase-060-fulfilled.ttl)|Read request from Alice to resource X returns into yes, if duty is not violated (Alice Request Read X- duty fulfilled).|true|false|
 |[urn:uuid:5b372c04-ceb8-48bd-b4b8-cb6380683374](../test_cases/testcase-061-violated.ttl)|Read request from Alice to resource X returns into yes, if duty is not violated (Alice Request Read X - duty violated).|true|false|
 |[urn:uuid:9c052f5d-0788-4352-b957-322b432b1bfa](../test_cases/testcase-062-big-policy.ttl)|Read request from Alice to resource X on weekdays from 9-17 in 2024 returns into yes (Alice Request Read X).|true|true|
+|[urn:uuid:8677b86e-4a09-421c-a75b-f50874c8ec58](../test_cases/testcase-063-big-policy-OoO.ttl)|Read request from Alice to resource X on weekdays from 9-17 in 2024 returns into yes (Alice Request Read X - out of office).|true|true|
+|[urn:uuid:32ac9d9d-dddf-434a-a309-14bb9224ef2e](../test_cases/testcase-064-big-policy-past.ttl)|Read request from Alice to resource X on weekdays from 9-17 in 2024 returns into yes (Alice Request Read X - past).|true|true|
+|[urn:uuid:5ab9d056-dcb8-47f6-a4af-dd5d9320f958](../test_cases/testcase-065-alice.ttl)|Read request from people in party collection to resource X in 2024 returns into yes (Alice Request Read X).|true|false|
+|[urn:uuid:f9648615-bb2f-4d74-8f87-e2da0d327932](../test_cases/testcase-066-bob-sell.ttl)|Read request from people in party collection to resource X in 2024 returns into yes (Alice Request Read X - past).|true|false|
+|[urn:uuid:2c997aef-a337-4503-aec7-3a93675f7b1a](../test_cases/testcase-067-alice-past.ttl)|Read request from people in party collection to resource X in 2024 returns into yes (Alice Request Read X - past).|true|false|
+|[urn:uuid:7844a3ce-40ec-4d6d-90f4-d0be27bba69c](../test_cases/testcase-068-bob-write-y-past.ttl)|Read request from people in party collection to resource X in 2024 returns into yes (Bob Request Write Y - past).|true|false|
