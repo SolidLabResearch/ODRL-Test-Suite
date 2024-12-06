@@ -12,6 +12,8 @@ A test case consists of the following:
 
 ## How does it work
 
+![](img/test-suite-cropped.jpg)
+
 First, it loads in the test cases.
 A test case has a description in RDF which instantiated looks like the following:
 
@@ -24,7 +26,7 @@ A test case has a description in RDF which instantiated looks like the following
     ex:expectedReport <ReportIdentifier> .
 ```
 
-[I001] |n [`data/test_cases/`](./data/test_cases/) examples can be found of an [instantiated test case](./data/test_cases/testcase-001-alice.ttl).
+In [`data/test_cases/`](./data/test_cases/) examples can be found of an [instantiated test case](./data/test_cases/testcase-001-alice.ttl).
 
 The function `loadTestCases` is responsible for this task.
 
