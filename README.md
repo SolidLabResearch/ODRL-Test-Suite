@@ -1,5 +1,7 @@
 # Test Suite
 
+[![DOI](https://zenodo.org/badge/898027264.svg)](https://doi.org/10.5281/zenodo.14290517)
+
 The test suite is software that can execute, validate and measure the compliance of an evaluator over a set of test cases.
 
 A test case consists of the following:
