@@ -4,6 +4,7 @@ export * from "./input/ParseInput"
 export * from "./output/StoreOutput"
 
 export * from "./test_cases/ComplianceReportUtil"
+export * from "./test_cases/IndexUtil"
 export * from "./test_cases/ODRLUtil"
 export * from "./test_cases/TestCaseUtil"
 export * from "./test_cases/SotwUtil"

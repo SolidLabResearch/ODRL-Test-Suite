@@ -28,7 +28,7 @@ async function main() {
 
     // evaluate function -> loop over test cases and evaluate
     // const engine = new ODRLEngineMultipleSteps(); // EYE JS engine
-    const engine = new ODRLEngineMultipleSteps(new EyeReasoner('/usr/local/bin/eye', ["--quiet", "--nope", "--pass-only-new"])); // EYE local
+    const engine = new ODRLEngineMultipleSteps({reasoner: new EyeReasoner('/usr/local/bin/eye', ["--quiet", "--nope", "--pass-only-new"])}); // EYE local
     const odrlEvaluator = new ODRLEvaluator(engine);
     const comparison = ComplianceReportComparator.simple;
     const testCaseEvaluator = new TestCaseEvaluator(odrlEvaluator, comparison);

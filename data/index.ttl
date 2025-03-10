@@ -1,0 +1,5 @@
+<urn:uuid:e2123eb7-0707-4f24-bcc0-9d61dd9088a9> <http://purl.org/dc/terms/title> "Any request results into yes (Alice Request)." .
+<urn:uuid:e2123eb7-0707-4f24-bcc0-9d61dd9088a9> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-1.ttl> .
+<urn:uuid:e2123eb7-0707-4f24-bcc0-9d61dd9088a9> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:e2123eb7-0707-4f24-bcc0-9d61dd9088a9> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:e2123eb7-0707-4f24-bcc0-9d61dd9088a9> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-001-alice.ttl> .
