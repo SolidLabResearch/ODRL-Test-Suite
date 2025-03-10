@@ -31,7 +31,7 @@ async function main() {
     console.log("Create Index over all test cases");
 
     // creating the index -> store and publish
-    const index = createIndex([testCases[0]], {baseIRI:online, projectDirectory: path.join(__dirname,"..")});
+    const index = createIndex(testCases, {baseIRI:online, projectDirectory: path.join(__dirname,"..")});
 
     const indexPath = path.join(rootDir, 'index.ttl')
     console.log(`Store index at '${indexPath}'`);

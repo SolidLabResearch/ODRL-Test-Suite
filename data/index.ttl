@@ -3,3 +3,338 @@
 <urn:uuid:e2123eb7-0707-4f24-bcc0-9d61dd9088a9> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
 <urn:uuid:e2123eb7-0707-4f24-bcc0-9d61dd9088a9> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
 <urn:uuid:e2123eb7-0707-4f24-bcc0-9d61dd9088a9> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-001-alice.ttl> .
+<urn:uuid:bffd9ee8-63a6-4b50-ab68-26709ce95bdc> <http://purl.org/dc/terms/title> "Any request results into yes (Bob Request)." .
+<urn:uuid:bffd9ee8-63a6-4b50-ab68-26709ce95bdc> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-1.ttl> .
+<urn:uuid:bffd9ee8-63a6-4b50-ab68-26709ce95bdc> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-2.ttl> .
+<urn:uuid:bffd9ee8-63a6-4b50-ab68-26709ce95bdc> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:bffd9ee8-63a6-4b50-ab68-26709ce95bdc> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-002-bob.ttl> .
+<urn:uuid:debea3a5-056b-464c-bcca-95ab4678a27b> <http://purl.org/dc/terms/title> "Any request results into yes (Bob Request Write)." .
+<urn:uuid:debea3a5-056b-464c-bcca-95ab4678a27b> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-1.ttl> .
+<urn:uuid:debea3a5-056b-464c-bcca-95ab4678a27b> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-3.ttl> .
+<urn:uuid:debea3a5-056b-464c-bcca-95ab4678a27b> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:debea3a5-056b-464c-bcca-95ab4678a27b> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-003-bob-write-y.ttl> .
+<urn:uuid:00a20e06-50db-4ae4-a53e-18ffeccde8c8> <http://purl.org/dc/terms/title> "Any request results into no (Alice Request)." .
+<urn:uuid:00a20e06-50db-4ae4-a53e-18ffeccde8c8> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-2.ttl> .
+<urn:uuid:00a20e06-50db-4ae4-a53e-18ffeccde8c8> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:00a20e06-50db-4ae4-a53e-18ffeccde8c8> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:00a20e06-50db-4ae4-a53e-18ffeccde8c8> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-004-alice.ttl> .
+<urn:uuid:a1c58c22-c170-483f-b05a-5b6ae4e632f5> <http://purl.org/dc/terms/title> "Any request results into no (Bob Request)." .
+<urn:uuid:a1c58c22-c170-483f-b05a-5b6ae4e632f5> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-2.ttl> .
+<urn:uuid:a1c58c22-c170-483f-b05a-5b6ae4e632f5> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-2.ttl> .
+<urn:uuid:a1c58c22-c170-483f-b05a-5b6ae4e632f5> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:a1c58c22-c170-483f-b05a-5b6ae4e632f5> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-005-bob.ttl> .
+<urn:uuid:f588a33b-9346-4ea5-9d3a-22fd215e50a6> <http://purl.org/dc/terms/title> "Any request results into no (Bob Request Write)." .
+<urn:uuid:f588a33b-9346-4ea5-9d3a-22fd215e50a6> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-2.ttl> .
+<urn:uuid:f588a33b-9346-4ea5-9d3a-22fd215e50a6> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-3.ttl> .
+<urn:uuid:f588a33b-9346-4ea5-9d3a-22fd215e50a6> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:f588a33b-9346-4ea5-9d3a-22fd215e50a6> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-006-bob-write-y.ttl> .
+<urn:uuid:b68298ee-f9d5-4f1c-a856-7a011cc2af69> <http://purl.org/dc/terms/title> "Any request to use results into yes (Alice Request)." .
+<urn:uuid:b68298ee-f9d5-4f1c-a856-7a011cc2af69> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-3.ttl> .
+<urn:uuid:b68298ee-f9d5-4f1c-a856-7a011cc2af69> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:b68298ee-f9d5-4f1c-a856-7a011cc2af69> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:b68298ee-f9d5-4f1c-a856-7a011cc2af69> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-007-alice.ttl> .
+<urn:uuid:dfe139c2-02c9-40b1-a8ae-e61cc82a768a> <http://purl.org/dc/terms/title> "Any request to use results into yes (Bob Request)." .
+<urn:uuid:dfe139c2-02c9-40b1-a8ae-e61cc82a768a> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-3.ttl> .
+<urn:uuid:dfe139c2-02c9-40b1-a8ae-e61cc82a768a> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-2.ttl> .
+<urn:uuid:dfe139c2-02c9-40b1-a8ae-e61cc82a768a> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:dfe139c2-02c9-40b1-a8ae-e61cc82a768a> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-008-bob.ttl> .
+<urn:uuid:f2e067fb-c1df-4266-9b23-6c60ccdbfcb0> <http://purl.org/dc/terms/title> "Any request to use results into yes (Bob Request Write)." .
+<urn:uuid:f2e067fb-c1df-4266-9b23-6c60ccdbfcb0> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-3.ttl> .
+<urn:uuid:f2e067fb-c1df-4266-9b23-6c60ccdbfcb0> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-3.ttl> .
+<urn:uuid:f2e067fb-c1df-4266-9b23-6c60ccdbfcb0> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:f2e067fb-c1df-4266-9b23-6c60ccdbfcb0> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-009-bob-write-y.ttl> .
+<urn:uuid:5e23604d-f6a0-464f-a6b3-eb04fe97b908> <http://purl.org/dc/terms/title> "Any request to use results into yes (Alice Request Sell)." .
+<urn:uuid:5e23604d-f6a0-464f-a6b3-eb04fe97b908> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-3.ttl> .
+<urn:uuid:5e23604d-f6a0-464f-a6b3-eb04fe97b908> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-4.ttl> .
+<urn:uuid:5e23604d-f6a0-464f-a6b3-eb04fe97b908> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:5e23604d-f6a0-464f-a6b3-eb04fe97b908> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-010-alice-sell.ttl> .
+<urn:uuid:f152953e-c7c6-4a47-a7e5-2522210d5627> <http://purl.org/dc/terms/title> "Any request to use results into no (Alice Request)." .
+<urn:uuid:f152953e-c7c6-4a47-a7e5-2522210d5627> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-4.ttl> .
+<urn:uuid:f152953e-c7c6-4a47-a7e5-2522210d5627> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:f152953e-c7c6-4a47-a7e5-2522210d5627> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:f152953e-c7c6-4a47-a7e5-2522210d5627> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-011-alice.ttl> .
+<urn:uuid:d9c381f3-76db-4e1e-801b-380c8e47722d> <http://purl.org/dc/terms/title> "Any request to use results into no (Bob Request)." .
+<urn:uuid:d9c381f3-76db-4e1e-801b-380c8e47722d> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-4.ttl> .
+<urn:uuid:d9c381f3-76db-4e1e-801b-380c8e47722d> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-2.ttl> .
+<urn:uuid:d9c381f3-76db-4e1e-801b-380c8e47722d> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:d9c381f3-76db-4e1e-801b-380c8e47722d> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-012-bob.ttl> .
+<urn:uuid:eed06a7c-055e-4789-bdbc-40365b2a26d4> <http://purl.org/dc/terms/title> "Any request to use results into no (Bob Request Write)." .
+<urn:uuid:eed06a7c-055e-4789-bdbc-40365b2a26d4> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-4.ttl> .
+<urn:uuid:eed06a7c-055e-4789-bdbc-40365b2a26d4> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-3.ttl> .
+<urn:uuid:eed06a7c-055e-4789-bdbc-40365b2a26d4> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:eed06a7c-055e-4789-bdbc-40365b2a26d4> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-013-bob-write-y.ttl> .
+<urn:uuid:687781a9-409d-4ae6-89e5-3a64bdb5bda7> <http://purl.org/dc/terms/title> "Any request to use results into no (Alice Request Sell)." .
+<urn:uuid:687781a9-409d-4ae6-89e5-3a64bdb5bda7> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-4.ttl> .
+<urn:uuid:687781a9-409d-4ae6-89e5-3a64bdb5bda7> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-4.ttl> .
+<urn:uuid:687781a9-409d-4ae6-89e5-3a64bdb5bda7> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:687781a9-409d-4ae6-89e5-3a64bdb5bda7> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-014-alice-sell.ttl> .
+<urn:uuid:a03acb38-73b3-4b09-a1f9-d9dd21bae0ef> <http://purl.org/dc/terms/title> "Any request from Alice to use returns into yes (Alice Request)." .
+<urn:uuid:a03acb38-73b3-4b09-a1f9-d9dd21bae0ef> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-5.ttl> .
+<urn:uuid:a03acb38-73b3-4b09-a1f9-d9dd21bae0ef> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:a03acb38-73b3-4b09-a1f9-d9dd21bae0ef> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:a03acb38-73b3-4b09-a1f9-d9dd21bae0ef> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-015-alice.ttl> .
+<urn:uuid:296a3e9d-af68-4d1c-8acd-f2958c3d7a8a> <http://purl.org/dc/terms/title> "Any request from Alice to use returns into yes (Bob Request)." .
+<urn:uuid:296a3e9d-af68-4d1c-8acd-f2958c3d7a8a> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-5.ttl> .
+<urn:uuid:296a3e9d-af68-4d1c-8acd-f2958c3d7a8a> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-2.ttl> .
+<urn:uuid:296a3e9d-af68-4d1c-8acd-f2958c3d7a8a> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:296a3e9d-af68-4d1c-8acd-f2958c3d7a8a> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-016-bob.ttl> .
+<urn:uuid:ab740e02-2f2c-4f50-bccd-9884e96b679e> <http://purl.org/dc/terms/title> "Any request from Alice to use returns into yes (Alice Request Sell)." .
+<urn:uuid:ab740e02-2f2c-4f50-bccd-9884e96b679e> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-5.ttl> .
+<urn:uuid:ab740e02-2f2c-4f50-bccd-9884e96b679e> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-4.ttl> .
+<urn:uuid:ab740e02-2f2c-4f50-bccd-9884e96b679e> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:ab740e02-2f2c-4f50-bccd-9884e96b679e> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-017-alice-sell.ttl> .
+<urn:uuid:95dd195c-0e5e-440f-8517-f4298a64a019> <http://purl.org/dc/terms/title> "Any request from Bob to use returns into no (Alice Request)." .
+<urn:uuid:95dd195c-0e5e-440f-8517-f4298a64a019> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-6.ttl> .
+<urn:uuid:95dd195c-0e5e-440f-8517-f4298a64a019> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:95dd195c-0e5e-440f-8517-f4298a64a019> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:95dd195c-0e5e-440f-8517-f4298a64a019> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-018-alice.ttl> .
+<urn:uuid:790f07c5-2dc2-4782-abcc-410340abad94> <http://purl.org/dc/terms/title> "Any request from Bob to use returns into no (Bob Request)." .
+<urn:uuid:790f07c5-2dc2-4782-abcc-410340abad94> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-6.ttl> .
+<urn:uuid:790f07c5-2dc2-4782-abcc-410340abad94> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-2.ttl> .
+<urn:uuid:790f07c5-2dc2-4782-abcc-410340abad94> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:790f07c5-2dc2-4782-abcc-410340abad94> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-019-bob.ttl> .
+<urn:uuid:c309ff91-5c6e-427a-bee4-4923f5f38844> <http://purl.org/dc/terms/title> "Any request from Bob to use returns into no (Bob Request Sell)." .
+<urn:uuid:c309ff91-5c6e-427a-bee4-4923f5f38844> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-6.ttl> .
+<urn:uuid:c309ff91-5c6e-427a-bee4-4923f5f38844> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-5.ttl> .
+<urn:uuid:c309ff91-5c6e-427a-bee4-4923f5f38844> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:c309ff91-5c6e-427a-bee4-4923f5f38844> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-020-bob-sell.ttl> .
+<urn:uuid:84cdbf46-afc2-42f2-9ed5-b9e87063292c> <http://purl.org/dc/terms/title> "Read request from Alice returns into yes (Alice Request)." .
+<urn:uuid:84cdbf46-afc2-42f2-9ed5-b9e87063292c> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-7.ttl> .
+<urn:uuid:84cdbf46-afc2-42f2-9ed5-b9e87063292c> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:84cdbf46-afc2-42f2-9ed5-b9e87063292c> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:84cdbf46-afc2-42f2-9ed5-b9e87063292c> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-021-alice.ttl> .
+<urn:uuid:9cbe9ea0-61aa-4e92-a711-65d677b54f55> <http://purl.org/dc/terms/title> "Read request from Alice returns into yes (Alice Request Sell)." .
+<urn:uuid:9cbe9ea0-61aa-4e92-a711-65d677b54f55> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-7.ttl> .
+<urn:uuid:9cbe9ea0-61aa-4e92-a711-65d677b54f55> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-4.ttl> .
+<urn:uuid:9cbe9ea0-61aa-4e92-a711-65d677b54f55> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:9cbe9ea0-61aa-4e92-a711-65d677b54f55> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-022-alice-sell.ttl> .
+<urn:uuid:0b40edb2-8d1c-4c0e-91a0-1c19486686bd> <http://purl.org/dc/terms/title> "Read request from Alice returns into yes (Alice Request Read Y)." .
+<urn:uuid:0b40edb2-8d1c-4c0e-91a0-1c19486686bd> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-7.ttl> .
+<urn:uuid:0b40edb2-8d1c-4c0e-91a0-1c19486686bd> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-6.ttl> .
+<urn:uuid:0b40edb2-8d1c-4c0e-91a0-1c19486686bd> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:0b40edb2-8d1c-4c0e-91a0-1c19486686bd> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-023-alice-read-y.ttl> .
+<urn:uuid:623d29bc-f4e2-4f2a-80ec-2cbb2e8c6a2a> <http://purl.org/dc/terms/title> "Read request from Alice returns into yes (Alice Request Write X)." .
+<urn:uuid:623d29bc-f4e2-4f2a-80ec-2cbb2e8c6a2a> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-7.ttl> .
+<urn:uuid:623d29bc-f4e2-4f2a-80ec-2cbb2e8c6a2a> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-7.ttl> .
+<urn:uuid:623d29bc-f4e2-4f2a-80ec-2cbb2e8c6a2a> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:623d29bc-f4e2-4f2a-80ec-2cbb2e8c6a2a> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-024-alice-write-x.ttl> .
+<urn:uuid:c6cc07c2-7c97-44d2-a85d-578710efefca> <http://purl.org/dc/terms/title> "Read request from Alice returns into yes (Bob Request Read X)." .
+<urn:uuid:c6cc07c2-7c97-44d2-a85d-578710efefca> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-7.ttl> .
+<urn:uuid:c6cc07c2-7c97-44d2-a85d-578710efefca> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-8.ttl> .
+<urn:uuid:c6cc07c2-7c97-44d2-a85d-578710efefca> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:c6cc07c2-7c97-44d2-a85d-578710efefca> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-025-bob-read-x.ttl> .
+<urn:uuid:3ce32312-1c36-4839-b12d-e3d6884d89f0> <http://purl.org/dc/terms/title> "Read request from Alice to resource X returns into yes (Alice Request Read X)." .
+<urn:uuid:3ce32312-1c36-4839-b12d-e3d6884d89f0> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-8.ttl> .
+<urn:uuid:3ce32312-1c36-4839-b12d-e3d6884d89f0> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:3ce32312-1c36-4839-b12d-e3d6884d89f0> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:3ce32312-1c36-4839-b12d-e3d6884d89f0> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-026-alice-read-x.ttl> .
+<urn:uuid:113d9a92-fee3-42b2-b347-e8bbc8316b6f> <http://purl.org/dc/terms/title> "Read request from Alice to resource X returns into yes (Alice Request Write X)." .
+<urn:uuid:113d9a92-fee3-42b2-b347-e8bbc8316b6f> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-8.ttl> .
+<urn:uuid:113d9a92-fee3-42b2-b347-e8bbc8316b6f> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-7.ttl> .
+<urn:uuid:113d9a92-fee3-42b2-b347-e8bbc8316b6f> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:113d9a92-fee3-42b2-b347-e8bbc8316b6f> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-027-alice-write-x.ttl> .
+<urn:uuid:97e3adc5-16f1-45d2-87b9-e8e50b5a61d8> <http://purl.org/dc/terms/title> "Read request from Alice to resource X returns into yes (Alice Request Read Y)." .
+<urn:uuid:97e3adc5-16f1-45d2-87b9-e8e50b5a61d8> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-8.ttl> .
+<urn:uuid:97e3adc5-16f1-45d2-87b9-e8e50b5a61d8> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-6.ttl> .
+<urn:uuid:97e3adc5-16f1-45d2-87b9-e8e50b5a61d8> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:97e3adc5-16f1-45d2-87b9-e8e50b5a61d8> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-028-alice-read-y.ttl> .
+<urn:uuid:2e5cac06-0f27-4265-884c-9a60d5a64a61> <http://purl.org/dc/terms/title> "Read request from Alice to resource X returns into yes (Bob Request Write Y)." .
+<urn:uuid:2e5cac06-0f27-4265-884c-9a60d5a64a61> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-8.ttl> .
+<urn:uuid:2e5cac06-0f27-4265-884c-9a60d5a64a61> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-3.ttl> .
+<urn:uuid:2e5cac06-0f27-4265-884c-9a60d5a64a61> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:2e5cac06-0f27-4265-884c-9a60d5a64a61> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-029-bob-write-y.ttl> .
+<urn:uuid:dde40097-f237-40cf-bb1e-03f632f6fd62> <http://purl.org/dc/terms/title> "Read request from Alice to resource X returns into yes (temporal eq) (Alice Request Read X)." .
+<urn:uuid:dde40097-f237-40cf-bb1e-03f632f6fd62> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-9.ttl> .
+<urn:uuid:dde40097-f237-40cf-bb1e-03f632f6fd62> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:dde40097-f237-40cf-bb1e-03f632f6fd62> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:dde40097-f237-40cf-bb1e-03f632f6fd62> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-030-alice-read-x.ttl> .
+<urn:uuid:f86ae64f-a207-4f5e-824d-c71253419232> <http://purl.org/dc/terms/title> "Read request from Alice to resource X returns into yes (temporal eq - past) (Alice Request Read X)." .
+<urn:uuid:f86ae64f-a207-4f5e-824d-c71253419232> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-9.ttl> .
+<urn:uuid:f86ae64f-a207-4f5e-824d-c71253419232> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:f86ae64f-a207-4f5e-824d-c71253419232> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal-past.ttl> .
+<urn:uuid:f86ae64f-a207-4f5e-824d-c71253419232> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-031-alice-read-x-past.ttl> .
+<urn:uuid:ea199623-277b-4976-9cf5-1bbccb334da3> <http://purl.org/dc/terms/title> "Read request from Alice to resource X returns into yes (temporal eq - future) (Alice Request Read X)." .
+<urn:uuid:ea199623-277b-4976-9cf5-1bbccb334da3> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-9.ttl> .
+<urn:uuid:ea199623-277b-4976-9cf5-1bbccb334da3> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:ea199623-277b-4976-9cf5-1bbccb334da3> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal-future.ttl> .
+<urn:uuid:ea199623-277b-4976-9cf5-1bbccb334da3> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-032-alice-read-x-future.ttl> .
+<urn:uuid:b55e6773-1149-4149-86c2-d5133885f99e> <http://purl.org/dc/terms/title> "Read request from Alice to resource X returns into yes (temporal neq) (Alice Request Read X)." .
+<urn:uuid:b55e6773-1149-4149-86c2-d5133885f99e> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-10.ttl> .
+<urn:uuid:b55e6773-1149-4149-86c2-d5133885f99e> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:b55e6773-1149-4149-86c2-d5133885f99e> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:b55e6773-1149-4149-86c2-d5133885f99e> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-033-alice-read-x.ttl> .
+<urn:uuid:c58bab8c-a0a7-400b-9f28-1f753482a041> <http://purl.org/dc/terms/title> "Read request from Alice to resource X returns into yes (temporal neq - past) (Alice Request Read X)." .
+<urn:uuid:c58bab8c-a0a7-400b-9f28-1f753482a041> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-10.ttl> .
+<urn:uuid:c58bab8c-a0a7-400b-9f28-1f753482a041> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:c58bab8c-a0a7-400b-9f28-1f753482a041> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal-past.ttl> .
+<urn:uuid:c58bab8c-a0a7-400b-9f28-1f753482a041> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-034-alice-read-x-past.ttl> .
+<urn:uuid:420152ac-946b-4187-9b0d-f1facebc983e> <http://purl.org/dc/terms/title> "Read request from Alice to resource X returns into yes (temporal neq - future) (Alice Request Read X)." .
+<urn:uuid:420152ac-946b-4187-9b0d-f1facebc983e> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-10.ttl> .
+<urn:uuid:420152ac-946b-4187-9b0d-f1facebc983e> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:420152ac-946b-4187-9b0d-f1facebc983e> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal-future.ttl> .
+<urn:uuid:420152ac-946b-4187-9b0d-f1facebc983e> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-035-alice-read-x-future.ttl> .
+<urn:uuid:e0cbcbbd-00de-4fb1-b4c0-fc86a1b7ec9d> <http://purl.org/dc/terms/title> "Read request from Alice to resource X returns into yes (temporal lt) (Alice Request Read X)." .
+<urn:uuid:e0cbcbbd-00de-4fb1-b4c0-fc86a1b7ec9d> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-11.ttl> .
+<urn:uuid:e0cbcbbd-00de-4fb1-b4c0-fc86a1b7ec9d> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:e0cbcbbd-00de-4fb1-b4c0-fc86a1b7ec9d> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal-future.ttl> .
+<urn:uuid:e0cbcbbd-00de-4fb1-b4c0-fc86a1b7ec9d> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-036-alice-read-x.ttl> .
+<urn:uuid:22ee88e3-a923-4ee0-b690-65710cf9480f> <http://purl.org/dc/terms/title> "Read request from Alice to resource X returns into yes (temporal lt - past) (Alice Request Read X)." .
+<urn:uuid:22ee88e3-a923-4ee0-b690-65710cf9480f> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-11.ttl> .
+<urn:uuid:22ee88e3-a923-4ee0-b690-65710cf9480f> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:22ee88e3-a923-4ee0-b690-65710cf9480f> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal-past.ttl> .
+<urn:uuid:22ee88e3-a923-4ee0-b690-65710cf9480f> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-037-alice-read-x-past.ttl> .
+<urn:uuid:d8c0aec1-a8d1-41dc-8847-775669a264e3> <http://purl.org/dc/terms/title> "Read request from Alice to resource X returns into yes (temporal lt - future) (Alice Request Read X)." .
+<urn:uuid:d8c0aec1-a8d1-41dc-8847-775669a264e3> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-11.ttl> .
+<urn:uuid:d8c0aec1-a8d1-41dc-8847-775669a264e3> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:d8c0aec1-a8d1-41dc-8847-775669a264e3> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal-future.ttl> .
+<urn:uuid:d8c0aec1-a8d1-41dc-8847-775669a264e3> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-038-alice-read-x-future.ttl> .
+<urn:uuid:251ab936-e085-44f1-aca6-ecbd704d1128> <http://purl.org/dc/terms/title> "Read request from Alice to resource X returns into yes (temporal lteq) (Alice Request Read X)." .
+<urn:uuid:251ab936-e085-44f1-aca6-ecbd704d1128> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-12.ttl> .
+<urn:uuid:251ab936-e085-44f1-aca6-ecbd704d1128> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:251ab936-e085-44f1-aca6-ecbd704d1128> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:251ab936-e085-44f1-aca6-ecbd704d1128> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-039-alice-read-x.ttl> .
+<urn:uuid:778fb3a6-aefe-4fd5-91e8-6455b6409707> <http://purl.org/dc/terms/title> "Read request from Alice to resource X returns into yes (temporal lteq - past) (Alice Request Read X)." .
+<urn:uuid:778fb3a6-aefe-4fd5-91e8-6455b6409707> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-12.ttl> .
+<urn:uuid:778fb3a6-aefe-4fd5-91e8-6455b6409707> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:778fb3a6-aefe-4fd5-91e8-6455b6409707> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal-past.ttl> .
+<urn:uuid:778fb3a6-aefe-4fd5-91e8-6455b6409707> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-040-alice-read-x-past.ttl> .
+<urn:uuid:44b34091-7f68-43b2-8a1b-529da71e2237> <http://purl.org/dc/terms/title> "Read request from Alice to resource X returns into yes (temporal lteq - future) (Alice Request Read X)." .
+<urn:uuid:44b34091-7f68-43b2-8a1b-529da71e2237> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-12.ttl> .
+<urn:uuid:44b34091-7f68-43b2-8a1b-529da71e2237> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:44b34091-7f68-43b2-8a1b-529da71e2237> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal-future.ttl> .
+<urn:uuid:44b34091-7f68-43b2-8a1b-529da71e2237> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-041-alice-read-x-future.ttl> .
+<urn:uuid:55606dca-592f-49da-95c3-8795e99cafca> <http://purl.org/dc/terms/title> "Read request from Alice to resource X returns into yes (temporal gt) (Alice Request Read X)." .
+<urn:uuid:55606dca-592f-49da-95c3-8795e99cafca> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-13.ttl> .
+<urn:uuid:55606dca-592f-49da-95c3-8795e99cafca> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:55606dca-592f-49da-95c3-8795e99cafca> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:55606dca-592f-49da-95c3-8795e99cafca> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-042-alice-read-x.ttl> .
+<urn:uuid:8a50fa6b-468a-4959-94d3-33458ec30cc9> <http://purl.org/dc/terms/title> "Read request from Alice to resource X returns into yes (temporal gt - past) (Alice Request Read X)." .
+<urn:uuid:8a50fa6b-468a-4959-94d3-33458ec30cc9> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-13.ttl> .
+<urn:uuid:8a50fa6b-468a-4959-94d3-33458ec30cc9> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:8a50fa6b-468a-4959-94d3-33458ec30cc9> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal-past.ttl> .
+<urn:uuid:8a50fa6b-468a-4959-94d3-33458ec30cc9> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-043-alice-read-x-past.ttl> .
+<urn:uuid:431d8e84-236b-4045-a3f2-cc36bf5a21c2> <http://purl.org/dc/terms/title> "Read request from Alice to resource X returns into yes (temporal gt - future) (Alice Request Read X)." .
+<urn:uuid:431d8e84-236b-4045-a3f2-cc36bf5a21c2> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-13.ttl> .
+<urn:uuid:431d8e84-236b-4045-a3f2-cc36bf5a21c2> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:431d8e84-236b-4045-a3f2-cc36bf5a21c2> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal-future.ttl> .
+<urn:uuid:431d8e84-236b-4045-a3f2-cc36bf5a21c2> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-044-alice-read-x-future.ttl> .
+<urn:uuid:0cf68c7f-97ba-4bc5-8f57-53e99dc7e989> <http://purl.org/dc/terms/title> "Read request from Alice to resource X returns into yes (temporal gteq) (Alice Request Read X)." .
+<urn:uuid:0cf68c7f-97ba-4bc5-8f57-53e99dc7e989> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-14.ttl> .
+<urn:uuid:0cf68c7f-97ba-4bc5-8f57-53e99dc7e989> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:0cf68c7f-97ba-4bc5-8f57-53e99dc7e989> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:0cf68c7f-97ba-4bc5-8f57-53e99dc7e989> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-045-alice-read-x.ttl> .
+<urn:uuid:2535a606-e982-49d4-b6a0-b35b81ec518d> <http://purl.org/dc/terms/title> "Read request from Alice to resource X returns into yes (temporal gteq - past) (Alice Request Read X)." .
+<urn:uuid:2535a606-e982-49d4-b6a0-b35b81ec518d> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-14.ttl> .
+<urn:uuid:2535a606-e982-49d4-b6a0-b35b81ec518d> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:2535a606-e982-49d4-b6a0-b35b81ec518d> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal-past.ttl> .
+<urn:uuid:2535a606-e982-49d4-b6a0-b35b81ec518d> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-046-alice-read-x-past.ttl> .
+<urn:uuid:43a06637-af8a-4db3-a29d-1ac8916d3291> <http://purl.org/dc/terms/title> "Read request from Alice to resource X returns into yes (temporal gteq - future) (Alice Request Read X)." .
+<urn:uuid:43a06637-af8a-4db3-a29d-1ac8916d3291> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-14.ttl> .
+<urn:uuid:43a06637-af8a-4db3-a29d-1ac8916d3291> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:43a06637-af8a-4db3-a29d-1ac8916d3291> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal-future.ttl> .
+<urn:uuid:43a06637-af8a-4db3-a29d-1ac8916d3291> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-047-alice-read-x-future.ttl> .
+<urn:uuid:1f435d44-1ba1-477c-b07e-79ee56abee34> <http://purl.org/dc/terms/title> "Read request from Alice to resource X returns into yes (temporal + And (year 2024)) (Alice Request Read X)." .
+<urn:uuid:1f435d44-1ba1-477c-b07e-79ee56abee34> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-15.ttl> .
+<urn:uuid:1f435d44-1ba1-477c-b07e-79ee56abee34> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:1f435d44-1ba1-477c-b07e-79ee56abee34> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:1f435d44-1ba1-477c-b07e-79ee56abee34> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-048-alice-read-x.ttl> .
+<urn:uuid:f7e559c1-e9e2-403a-a335-aa0ec71d2531> <http://purl.org/dc/terms/title> "Read request from Alice to resource X returns into yes (temporal + And (year 2024)) (Alice Request Read X - past)." .
+<urn:uuid:f7e559c1-e9e2-403a-a335-aa0ec71d2531> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-15.ttl> .
+<urn:uuid:f7e559c1-e9e2-403a-a335-aa0ec71d2531> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:f7e559c1-e9e2-403a-a335-aa0ec71d2531> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal-past.ttl> .
+<urn:uuid:f7e559c1-e9e2-403a-a335-aa0ec71d2531> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-049-alice-read-x-past.ttl> .
+<urn:uuid:7a7afb6f-f4f8-4bb7-90e0-4b913e58cc94> <http://purl.org/dc/terms/title> "Read request from Alice to resource X returns into yes (temporal + And (year 2024)) (Alice Request Read X - future)." .
+<urn:uuid:7a7afb6f-f4f8-4bb7-90e0-4b913e58cc94> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-15.ttl> .
+<urn:uuid:7a7afb6f-f4f8-4bb7-90e0-4b913e58cc94> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:7a7afb6f-f4f8-4bb7-90e0-4b913e58cc94> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal-future.ttl> .
+<urn:uuid:7a7afb6f-f4f8-4bb7-90e0-4b913e58cc94> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-050-alice-read-x-future.ttl> .
+<urn:uuid:11a9dfb5-a3a9-43a5-9c18-e92df3057e76> <http://purl.org/dc/terms/title> "Read request from people in party collection to resource X returns into yes (Alice Request Read X)." .
+<urn:uuid:11a9dfb5-a3a9-43a5-9c18-e92df3057e76> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-16.ttl> .
+<urn:uuid:11a9dfb5-a3a9-43a5-9c18-e92df3057e76> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:11a9dfb5-a3a9-43a5-9c18-e92df3057e76> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/partyMembership.ttl> .
+<urn:uuid:11a9dfb5-a3a9-43a5-9c18-e92df3057e76> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-051-alice.ttl> .
+<urn:uuid:57856edb-2ff9-4ff8-a2b2-f56ceb8d5825> <http://purl.org/dc/terms/title> "Read request from people in party collection to resource X returns into yes (Bob Request Read X)." .
+<urn:uuid:57856edb-2ff9-4ff8-a2b2-f56ceb8d5825> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-16.ttl> .
+<urn:uuid:57856edb-2ff9-4ff8-a2b2-f56ceb8d5825> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-2.ttl> .
+<urn:uuid:57856edb-2ff9-4ff8-a2b2-f56ceb8d5825> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/partyMembership.ttl> .
+<urn:uuid:57856edb-2ff9-4ff8-a2b2-f56ceb8d5825> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-052-bob-read-x.ttl> .
+<urn:uuid:459e47f0-fcb8-4880-9225-5f6a3b4c155f> <http://purl.org/dc/terms/title> "Read request from Alice to resource in asset collection returns into yes (Alice Request Read X)." .
+<urn:uuid:459e47f0-fcb8-4880-9225-5f6a3b4c155f> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-17.ttl> .
+<urn:uuid:459e47f0-fcb8-4880-9225-5f6a3b4c155f> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:459e47f0-fcb8-4880-9225-5f6a3b4c155f> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/assetMembership.ttl> .
+<urn:uuid:459e47f0-fcb8-4880-9225-5f6a3b4c155f> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-053-alice-read-x.ttl> .
+<urn:uuid:1e735c45-0c7a-41fc-a267-784894e6fddd> <http://purl.org/dc/terms/title> "Read request from Alice to resource in asset collection returns into yes (Alice Request Read Y)." .
+<urn:uuid:1e735c45-0c7a-41fc-a267-784894e6fddd> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-17.ttl> .
+<urn:uuid:1e735c45-0c7a-41fc-a267-784894e6fddd> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-6.ttl> .
+<urn:uuid:1e735c45-0c7a-41fc-a267-784894e6fddd> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/assetMembership.ttl> .
+<urn:uuid:1e735c45-0c7a-41fc-a267-784894e6fddd> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-054-alice-read-y.ttl> .
+<urn:uuid:ada99890-79ab-4893-9969-69678fe3756c> <http://purl.org/dc/terms/title> "Read request from people in party collection to resource in asset collection returns into yes (Alice Request Read X)." .
+<urn:uuid:ada99890-79ab-4893-9969-69678fe3756c> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-18.ttl> .
+<urn:uuid:ada99890-79ab-4893-9969-69678fe3756c> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:ada99890-79ab-4893-9969-69678fe3756c> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/bothMembership.ttl> .
+<urn:uuid:ada99890-79ab-4893-9969-69678fe3756c> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-055-alice-read-x.ttl> .
+<urn:uuid:8c94c52e-76e4-4b36-96e5-b2782fcbf767> <http://purl.org/dc/terms/title> "Read request from people in party collection to resource in asset collection returns into yes (Alice Request Read Y)." .
+<urn:uuid:8c94c52e-76e4-4b36-96e5-b2782fcbf767> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-18.ttl> .
+<urn:uuid:8c94c52e-76e4-4b36-96e5-b2782fcbf767> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-6.ttl> .
+<urn:uuid:8c94c52e-76e4-4b36-96e5-b2782fcbf767> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/bothMembership.ttl> .
+<urn:uuid:8c94c52e-76e4-4b36-96e5-b2782fcbf767> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-056-alice-read-y.ttl> .
+<urn:uuid:9f6b34db-8bee-4de4-a313-afdae6f8cc3b> <http://purl.org/dc/terms/title> "Read request from people in party collection to resource in asset collection returns into yes (Bob Request Read X)." .
+<urn:uuid:9f6b34db-8bee-4de4-a313-afdae6f8cc3b> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-18.ttl> .
+<urn:uuid:9f6b34db-8bee-4de4-a313-afdae6f8cc3b> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-2.ttl> .
+<urn:uuid:9f6b34db-8bee-4de4-a313-afdae6f8cc3b> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/bothMembership.ttl> .
+<urn:uuid:9f6b34db-8bee-4de4-a313-afdae6f8cc3b> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-057-bob-read-x.ttl> .
+<urn:uuid:94703acc-1dfd-4689-87d2-607c81974a4c> <http://purl.org/dc/terms/title> "Read request from people in party collection to resource in asset collection returns into yes (Bob Request Write Y)." .
+<urn:uuid:94703acc-1dfd-4689-87d2-607c81974a4c> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-18.ttl> .
+<urn:uuid:94703acc-1dfd-4689-87d2-607c81974a4c> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-3.ttl> .
+<urn:uuid:94703acc-1dfd-4689-87d2-607c81974a4c> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/bothMembership.ttl> .
+<urn:uuid:94703acc-1dfd-4689-87d2-607c81974a4c> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-058-bob-write-y.ttl> .
+<urn:uuid:1c47df55-a53d-4740-93a8-614fc3ea9a1b> <http://purl.org/dc/terms/title> "Read request from Alice to resource X returns into yes, if duty is not violated (Alice Request Read X - duty unknown)." .
+<urn:uuid:1c47df55-a53d-4740-93a8-614fc3ea9a1b> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-19.ttl> .
+<urn:uuid:1c47df55-a53d-4740-93a8-614fc3ea9a1b> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:1c47df55-a53d-4740-93a8-614fc3ea9a1b> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/dutyNonset.ttl> .
+<urn:uuid:1c47df55-a53d-4740-93a8-614fc3ea9a1b> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-059-nonset.ttl> .
+<urn:uuid:211654bf-86e1-42f6-8f20-cd08e3c3992e> <http://purl.org/dc/terms/title> "Read request from Alice to resource X returns into yes, if duty is not violated (Alice Request Read X- duty fulfilled)." .
+<urn:uuid:211654bf-86e1-42f6-8f20-cd08e3c3992e> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-19.ttl> .
+<urn:uuid:211654bf-86e1-42f6-8f20-cd08e3c3992e> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:211654bf-86e1-42f6-8f20-cd08e3c3992e> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/dutyFulfilled.ttl> .
+<urn:uuid:211654bf-86e1-42f6-8f20-cd08e3c3992e> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-060-fulfilled.ttl> .
+<urn:uuid:5b372c04-ceb8-48bd-b4b8-cb6380683374> <http://purl.org/dc/terms/title> "Read request from Alice to resource X returns into yes, if duty is not violated (Alice Request Read X - duty violated)." .
+<urn:uuid:5b372c04-ceb8-48bd-b4b8-cb6380683374> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-19.ttl> .
+<urn:uuid:5b372c04-ceb8-48bd-b4b8-cb6380683374> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:5b372c04-ceb8-48bd-b4b8-cb6380683374> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/dutyViolated.ttl> .
+<urn:uuid:5b372c04-ceb8-48bd-b4b8-cb6380683374> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-061-violated.ttl> .
+<urn:uuid:9c052f5d-0788-4352-b957-322b432b1bfa> <http://purl.org/dc/terms/title> "Read request from Alice to resource X on weekdays from 9-17 in 2024 returns into yes (Alice Request Read X)." .
+<urn:uuid:9c052f5d-0788-4352-b957-322b432b1bfa> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-20.ttl> .
+<urn:uuid:9c052f5d-0788-4352-b957-322b432b1bfa> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:9c052f5d-0788-4352-b957-322b432b1bfa> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal.ttl> .
+<urn:uuid:9c052f5d-0788-4352-b957-322b432b1bfa> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-062-big-policy.ttl> .
+<urn:uuid:8677b86e-4a09-421c-a75b-f50874c8ec58> <http://purl.org/dc/terms/title> "Read request from Alice to resource X on weekdays from 9-17 in 2024 returns into yes (Alice Request Read X - out of office)." .
+<urn:uuid:8677b86e-4a09-421c-a75b-f50874c8ec58> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-20.ttl> .
+<urn:uuid:8677b86e-4a09-421c-a75b-f50874c8ec58> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:8677b86e-4a09-421c-a75b-f50874c8ec58> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/out-of-office.ttl> .
+<urn:uuid:8677b86e-4a09-421c-a75b-f50874c8ec58> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-063-big-policy-OoO.ttl> .
+<urn:uuid:32ac9d9d-dddf-434a-a309-14bb9224ef2e> <http://purl.org/dc/terms/title> "Read request from Alice to resource X on weekdays from 9-17 in 2024 returns into yes (Alice Request Read X - past)." .
+<urn:uuid:32ac9d9d-dddf-434a-a309-14bb9224ef2e> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-20.ttl> .
+<urn:uuid:32ac9d9d-dddf-434a-a309-14bb9224ef2e> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:32ac9d9d-dddf-434a-a309-14bb9224ef2e> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/temporal-past.ttl> .
+<urn:uuid:32ac9d9d-dddf-434a-a309-14bb9224ef2e> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-064-big-policy-past.ttl> .
+<urn:uuid:5ab9d056-dcb8-47f6-a4af-dd5d9320f958> <http://purl.org/dc/terms/title> "Read request from people in party collection to resource X in 2024 returns into yes (Alice Request Read X)." .
+<urn:uuid:5ab9d056-dcb8-47f6-a4af-dd5d9320f958> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-21.ttl> .
+<urn:uuid:5ab9d056-dcb8-47f6-a4af-dd5d9320f958> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:5ab9d056-dcb8-47f6-a4af-dd5d9320f958> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/all-2024.ttl> .
+<urn:uuid:5ab9d056-dcb8-47f6-a4af-dd5d9320f958> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-065-alice.ttl> .
+<urn:uuid:f9648615-bb2f-4d74-8f87-e2da0d327932> <http://purl.org/dc/terms/title> "Read request from people in party collection to resource X in 2024 returns into yes (Alice Request Read X - past)." .
+<urn:uuid:f9648615-bb2f-4d74-8f87-e2da0d327932> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-21.ttl> .
+<urn:uuid:f9648615-bb2f-4d74-8f87-e2da0d327932> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-5.ttl> .
+<urn:uuid:f9648615-bb2f-4d74-8f87-e2da0d327932> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/all-2024.ttl> .
+<urn:uuid:f9648615-bb2f-4d74-8f87-e2da0d327932> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-066-bob-sell.ttl> .
+<urn:uuid:2c997aef-a337-4503-aec7-3a93675f7b1a> <http://purl.org/dc/terms/title> "Read request from people in party collection to resource X in 2024 returns into yes (Alice Request Read X - past)." .
+<urn:uuid:2c997aef-a337-4503-aec7-3a93675f7b1a> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-21.ttl> .
+<urn:uuid:2c997aef-a337-4503-aec7-3a93675f7b1a> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-1.ttl> .
+<urn:uuid:2c997aef-a337-4503-aec7-3a93675f7b1a> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/all-2023.ttl> .
+<urn:uuid:2c997aef-a337-4503-aec7-3a93675f7b1a> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-067-alice-past.ttl> .
+<urn:uuid:7844a3ce-40ec-4d6d-90f4-d0be27bba69c> <http://purl.org/dc/terms/title> "Read request from people in party collection to resource X in 2024 returns into yes (Bob Request Write Y - past)." .
+<urn:uuid:7844a3ce-40ec-4d6d-90f4-d0be27bba69c> <http://example.org/policySource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/policies/policy-21.ttl> .
+<urn:uuid:7844a3ce-40ec-4d6d-90f4-d0be27bba69c> <http://example.org/requestSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/requests/request-3.ttl> .
+<urn:uuid:7844a3ce-40ec-4d6d-90f4-d0be27bba69c> <http://example.org/sotwSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/sotw/all-2023.ttl> .
+<urn:uuid:7844a3ce-40ec-4d6d-90f4-d0be27bba69c> <http://example.org/expectedReportSource> <https://raw.githubusercontent.com/SolidLabResearch/ODRL-Test-Suite/refs/heads/main/data/test_cases/testcase-068-bob-write-y-past.ttl> .

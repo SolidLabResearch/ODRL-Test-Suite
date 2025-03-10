@@ -1,13 +1,16 @@
 {
     "name": "odrl-test-suite",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "An open implementation of an ODRL Evaluator that evaluates ODRL policies by generating Compliance Reports",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
     "browser": {
         "./dist/index.js": "./dist/index.browser.js",
         "./dist/index.d.ts": "./dist/index.browser.d.ts"
-      },
+    },
+    "files": [
+        "dist"
+    ],
     "scripts": {
         "build": "npm run clean && tsc && npm run createIndex",
         "createIndex": "npx ts-node scripts/createIndex.ts",
