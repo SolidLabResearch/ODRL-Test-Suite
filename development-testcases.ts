@@ -87,7 +87,7 @@ const odrlPolicyText = `
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix report: <http://example.com/report/temp/>.
+@prefix report: <https://w3id.org/force/compliance-report#>.
 
 <${policyID}> a odrl:Set;
     odrl:uid <${policyID}> ;
@@ -126,7 +126,7 @@ const odrlRequestText = `
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix report: <http://example.com/report/temp/>.
+@prefix report: <https://w3id.org/force/compliance-report#>.
 
 <${requestID}> a odrl:Request;
     odrl:uid <${requestID}> ;
@@ -144,7 +144,7 @@ const stateOfTheWorldText = `
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix odrl: <http://www.w3.org/ns/odrl/2/>.
-@prefix report: <http://example.com/report/temp/>.
+@prefix report: <https://w3id.org/force/compliance-report#>.
 
 <${sotwID}> a ex:Sotw ;
     ex:includes temp:currentTime, <${policyReport}>, ex:alice .
@@ -202,7 +202,7 @@ async function main() {
         'dct': 'http://purl.org/dc/terms/',
         'xsd': 'http://www.w3.org/2001/XMLSchema#',
         'foaf': 'http://xmlns.com/foaf/0.1/',
-        'report': 'http://example.com/report/temp/'
+        'report': 'https://w3id.org/force/compliance-report#'
     }
 
 

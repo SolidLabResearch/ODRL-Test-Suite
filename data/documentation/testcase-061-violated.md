@@ -9,7 +9,7 @@
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix report: <http://example.com/report/temp/>.
+@prefix report: <https://w3id.org/force/compliance-report#>.
 
 <urn:uuid:5aa7f98c-65e0-4ff2-9846-40203203a58a> a odrl:Set;
     odrl:uid <urn:uuid:5aa7f98c-65e0-4ff2-9846-40203203a58a>;
@@ -32,7 +32,7 @@
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix report: <http://example.com/report/temp/>.
+@prefix report: <https://w3id.org/force/compliance-report#>.
 
 <urn:uuid:1bafee59-006c-46a3-810c-5d176b4be364> a odrl:Request;
     odrl:uid <urn:uuid:1bafee59-006c-46a3-810c-5d176b4be364>;
@@ -51,7 +51,7 @@
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix report: <http://example.com/report/temp/>.
+@prefix report: <https://w3id.org/force/compliance-report#>.
 
 temp:currentTime dct:issued "2024-02-12T11:20:10.999Z"^^xsd:dateTime.
 <urn:uuid:517d1bd4-fcae-46f9-a2a3-414da2cf4fe1> a report:PolicyReport;
@@ -72,7 +72,7 @@ temp:currentTime dct:issued "2024-02-12T11:20:10.999Z"^^xsd:dateTime.
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix report: <http://example.com/report/temp/>.
+@prefix report: <https://w3id.org/force/compliance-report#>.
 
 <urn:uuid:e001b361-9f6e-4e05-84bd-510d2870c83d> a report:PolicyReport;
     dct:created "2024-02-12T11:20:10.999Z"^^xsd:dateTime;

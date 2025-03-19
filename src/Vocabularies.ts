@@ -162,7 +162,7 @@ export const TEST = createVocabulary(
 );
 
 export const REPORT = createVocabulary(
-    'http://example.com/report/temp/',
+    'https://w3id.org/force/compliance-report#',
     'PolicyReport',
     'RuleReport',
     'PermissionReport',

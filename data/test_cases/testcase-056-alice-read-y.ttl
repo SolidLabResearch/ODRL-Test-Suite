@@ -4,7 +4,7 @@
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix report: <http://example.com/report/temp/>.
+@prefix report: <https://w3id.org/force/compliance-report#>.
 
 <urn:uuid:8c94c52e-76e4-4b36-96e5-b2782fcbf767> a ex:TestCase;
     dct:title "Read request from people in party collection to resource in asset collection returns into yes (Alice Request Read Y).";

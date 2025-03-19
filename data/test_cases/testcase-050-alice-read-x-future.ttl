@@ -4,7 +4,7 @@
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix report: <http://example.com/report/temp/>.
+@prefix report: <https://w3id.org/force/compliance-report#>.
 
 <urn:uuid:7a7afb6f-f4f8-4bb7-90e0-4b913e58cc94> a ex:TestCase;
     dct:title "Read request from Alice to resource X returns into yes (temporal + And (year 2024)) (Alice Request Read X - future).";

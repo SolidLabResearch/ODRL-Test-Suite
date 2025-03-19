@@ -4,7 +4,7 @@
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix report: <http://example.com/report/temp/>.
+@prefix report: <https://w3id.org/force/compliance-report#>.
 
 <urn:uuid:bffd9ee8-63a6-4b50-ab68-26709ce95bdc> a ex:TestCase;
     dct:title "Any request results into yes (Bob Request).";

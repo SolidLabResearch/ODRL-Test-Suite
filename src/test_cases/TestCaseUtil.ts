@@ -75,7 +75,7 @@ export function testCaseDocumentation(testCase: TestCase): string {
         'dct': 'http://purl.org/dc/terms/',
         'xsd': 'http://www.w3.org/2001/XMLSchema#',
         'foaf': 'http://xmlns.com/foaf/0.1/',
-        'report': 'http://example.com/report/temp/'
+        'report': 'https://w3id.org/force/compliance-report#'
     }
     let output = ""
 

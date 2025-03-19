@@ -1,6 +1,6 @@
 import * as path from "path";
 import {isomorphic} from "rdf-isomorphic";
-import {ODRLEngineMultipleSteps, ODRLEvaluator} from "odrl-evaluator";
+import {EyeReasoner, ODRLEngineMultipleSteps, ODRLEvaluator} from "odrl-evaluator";
 import {
     blanknodeify,
     ComplianceReportComparator,
@@ -16,13 +16,15 @@ import {
 
 describe('The test suite for the ODRL evaluator', () => {
 
-    const rootDir = path.join(__dirname, "..", "data", "ODRL");
+    const rootDir = path.join(__dirname, "..", "..", "data");
     const policiesDir = path.join(rootDir, "policies");
     const requestsDir = path.join(rootDir, "requests");
     const testCasesDir = path.join(rootDir, "test_cases");
     const stateOfTheWorldDir = path.join(rootDir, "sotw");
 
-    const odrlEvaluator = new ODRLEvaluator(new ODRLEngineMultipleSteps());
+    // const engine = new ODRLEngineMultipleSteps(); // EYE JS engine
+    const engine = new ODRLEngineMultipleSteps({reasoner:new EyeReasoner('/usr/local/bin/eye', ["--quiet", "--nope", "--pass-only-new"])}); // EYE local
+    const odrlEvaluator = new ODRLEvaluator(engine);
     let testCaseEvaluator: TestCaseEvaluator;
     let testCaseMap: Map<string, TestCase> = new Map();
     let testCases: TestCase[] = [];

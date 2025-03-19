@@ -4,7 +4,7 @@
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix report: <http://example.com/report/temp/>.
+@prefix report: <https://w3id.org/force/compliance-report#>.
 
 <urn:uuid:5aa7f98c-65e0-4ff2-9846-40203203a58a> a odrl:Set;
     odrl:uid <urn:uuid:5aa7f98c-65e0-4ff2-9846-40203203a58a>;

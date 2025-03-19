@@ -24,7 +24,7 @@ const documentationDir = path.join(rootDir, "documentation");
 const resultsDir = path.join(rootDir, "results");
 
 // const engine = new ODRLEngineMultipleSteps(); // EYE JS engine
-const engine = new ODRLEngineMultipleSteps(new EyeReasoner('/usr/local/bin/eye', ["--quiet", "--nope", "--pass-only-new"])); // EYE local
+const engine = new ODRLEngineMultipleSteps({reasoner:new EyeReasoner('/usr/local/bin/eye', ["--quiet", "--nope", "--pass-only-new"])}); // EYE local
 const odrlEvaluator = new ODRLEvaluator(engine);
 const comparison = ComplianceReportComparator.simple;
 const testCaseEvaluator = new TestCaseEvaluator(odrlEvaluator, comparison);
@@ -97,7 +97,7 @@ async function storeTestSuiteOutput(testCaseEvaluations: TestCaseEvaluation[], o
         'dct': 'http://purl.org/dc/terms/',
         'xsd': 'http://www.w3.org/2001/XMLSchema#',
         'foaf': 'http://xmlns.com/foaf/0.1/',
-        'report': 'http://example.com/report/temp/'
+        'report': 'https://w3id.org/force/compliance-report#'
     }
     const absoluteFilePathOverview = absoluteFilePath + '.md';
     const absoluteFilePathGraph = absoluteFilePath + '.ttl';

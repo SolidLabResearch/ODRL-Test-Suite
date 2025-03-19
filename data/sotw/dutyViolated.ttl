@@ -4,7 +4,7 @@
 @prefix dct: <http://purl.org/dc/terms/>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
-@prefix report: <http://example.com/report/temp/>.
+@prefix report: <https://w3id.org/force/compliance-report#>.
 
 <urn:uuid:9187bb05-519d-497c-8f4d-83492678b3e4> a ex:Sotw;
     ex:includes temp:currentTime, <urn:uuid:517d1bd4-fcae-46f9-a2a3-414da2cf4fe1>.
