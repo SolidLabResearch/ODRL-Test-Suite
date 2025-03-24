@@ -5,7 +5,7 @@ import {
     blanknodeify,
     ComplianceReportComparator,
     fileAsStore,
-    loadTestCases,
+    loadTestSuite,
     runComparisonTestSuite,
     runTestSuite,
     TestCase,
@@ -17,10 +17,7 @@ import {
 describe('The test suite for the ODRL evaluator', () => {
 
     const rootDir = path.join(__dirname, "..", "..", "data");
-    const policiesDir = path.join(rootDir, "policies");
-    const requestsDir = path.join(rootDir, "requests");
-    const testCasesDir = path.join(rootDir, "test_cases");
-    const stateOfTheWorldDir = path.join(rootDir, "sotw");
+
 
     // const engine = new ODRLEngineMultipleSteps(); // EYE JS engine
     const engine = new ODRLEngineMultipleSteps({reasoner:new EyeReasoner('/usr/local/bin/eye', ["--quiet", "--nope", "--pass-only-new"])}); // EYE local
@@ -33,7 +30,7 @@ describe('The test suite for the ODRL evaluator', () => {
 
     beforeAll(async () => {
         testCaseEvaluator =  new TestCaseEvaluator(odrlEvaluator, ComplianceReportComparator.activation);
-        testCaseMap = await loadTestCases(policiesDir, requestsDir, testCasesDir, stateOfTheWorldDir);
+        testCaseMap = await loadTestSuite(rootDir);
         testCaseMap.forEach((testCase)=> testCases.push(testCase));
 
         evaluations = await runTestSuite(testCases, testCaseEvaluator);

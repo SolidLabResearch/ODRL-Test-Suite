@@ -3,7 +3,7 @@ import * as path from "path";
 import { ODRLEngineMultipleSteps, ODRLEvaluator, EyeReasoner} from "odrl-evaluator";
 import {
     ComplianceReportComparator,
-    loadTestCases, resourceToOptimisedTurtle,
+    loadTestSuite, resourceToOptimisedTurtle,
     runComparisonTestSuite,
     runTestSuite,
     storeTestCase,
@@ -16,10 +16,6 @@ import {
 
 // Note: this can give problems -> need proper cli functionality with default current rootDir
 const rootDir = path.join(__dirname, "..", "data");
-const policiesDir = path.join(rootDir, "policies");
-const requestsDir = path.join(rootDir, "requests");
-const testCasesDir = path.join(rootDir, "test_cases");
-const stateOfTheWorldDir = path.join(rootDir, "sotw");
 const documentationDir = path.join(rootDir, "documentation");
 const resultsDir = path.join(rootDir, "results");
 
@@ -32,7 +28,7 @@ const testCaseEvaluator = new TestCaseEvaluator(odrlEvaluator, comparison);
 async function main() {
     console.log(`Loading all test cases: policies, requests and test case (state of the world, expected compliance report and test case)`);
 
-    const testCaseMap = await loadTestCases(policiesDir, requestsDir, testCasesDir, stateOfTheWorldDir);
+    const testCaseMap = await loadTestSuite(rootDir);
     const testCases: TestCase[] = [];
     testCaseMap.forEach((testCase) => testCases.push(testCase));
     console.log(`Test cases loaded.`);

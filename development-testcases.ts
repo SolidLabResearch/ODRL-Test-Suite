@@ -187,7 +187,7 @@ async function main() {
     
     // evaluator (assumes proper policies, requests and sotw)
     // const engine = new ODRLEngineMultipleSteps(); // EYE JS engine
-    const engine = new ODRLEngineMultipleSteps(new EyeReasoner('/usr/local/bin/eye', ["--quiet", "--nope", "--pass-only-new"])); // EYE local
+    const engine = new ODRLEngineMultipleSteps({reasoner: new EyeReasoner('/usr/local/bin/eye', ["--quiet", "--nope", "--pass-only-new"])}); // EYE local
     const evaluator = new ODRLEvaluator(engine);
 
     const reasoningResult = await evaluator.evaluate(
