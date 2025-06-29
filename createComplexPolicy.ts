@@ -1,6 +1,7 @@
 // creating a policy that during weekdays 9-17 of 2024 you have access to resource x
 import { EyeReasoner, fileAsStore, ODRLEngineMultipleSteps, ODRLEvaluator, turtleStringToStore , resourceToOptimisedTurtle} from "odrl-evaluator";
 import { v4 } from "uuid";
+import 'dotenv/config';
 
 const policyText = "During 9-17 on weekdays of 2024 ALICE has READ access to resource X."
 const policyID = `urn:uuid:${v4()}`
@@ -106,16 +107,16 @@ ex:alice a foaf:Person.
 ex:zeno a foaf:Person.
 `;
 async function test(){
+    const eye_bin = process.env.EYE_BIN || '/usr/local/bin/eye';
+
     const odrlPolicyStore = await fileAsStore('./bigPolicy.ttl')
     const odrlRequestStore = await turtleStringToStore(odrlRequestText);
     const stateOfTheWorldStore = await turtleStringToStore(stateOfTheWorldText);
     const start = performance.now();
 
-
-
     // evaluator (assumes proper policies, requests and sotw)
     // const engine = new ODRLEngineMultipleSteps(); // EYE JS engine
-    const engine = new ODRLEngineMultipleSteps(new EyeReasoner('/usr/local/bin/eye', ["--quiet", "--nope", "--pass-only-new"])); // EYE local
+    const engine = new ODRLEngineMultipleSteps(new EyeReasoner(eye_bin, ["--quiet", "--nope", "--pass-only-new"])); // EYE local
     const evaluator = new ODRLEvaluator(engine);
     const reasoningResult = await evaluator.evaluate(
         odrlPolicyStore.getQuads(null, null, null, null),

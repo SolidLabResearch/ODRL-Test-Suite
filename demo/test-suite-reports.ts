@@ -12,7 +12,9 @@ import {
     TestCaseEvaluator,
     testSuiteDocumentation, testSuiteResult
 } from "../src";
+import 'dotenv/config';
 
+const eye_bin = process.env.EYE_BIN || '/usr/local/bin/eye';
 
 // Note: this can give problems -> need proper cli functionality with default current rootDir
 const rootDir = path.join(__dirname, "..", "data");
@@ -20,7 +22,7 @@ const documentationDir = path.join(rootDir, "documentation");
 const resultsDir = path.join(rootDir, "results");
 
 // const engine = new ODRLEngineMultipleSteps(); // EYE JS engine
-const engine = new ODRLEngineMultipleSteps({reasoner:new EyeReasoner('/usr/local/bin/eye', ["--quiet", "--nope", "--pass-only-new"])}); // EYE local
+const engine = new ODRLEngineMultipleSteps({reasoner:new EyeReasoner(eye_bin, ["--quiet", "--nope", "--pass-only-new"])}); // EYE local
 const odrlEvaluator = new ODRLEvaluator(engine);
 const comparison = ComplianceReportComparator.simple;
 const testCaseEvaluator = new TestCaseEvaluator(odrlEvaluator, comparison);
