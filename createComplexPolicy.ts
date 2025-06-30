@@ -107,7 +107,7 @@ ex:alice a foaf:Person.
 ex:zeno a foaf:Person.
 `;
 async function test(){
-    const eye_bin = process.env.EYE_BIN || '/usr/local/bin/eye';
+    const eye_bin = process.env.EYE_BIN;
 
     const odrlPolicyStore = await fileAsStore('./bigPolicy.ttl')
     const odrlRequestStore = await turtleStringToStore(odrlRequestText);
@@ -115,8 +115,14 @@ async function test(){
     const start = performance.now();
 
     // evaluator (assumes proper policies, requests and sotw)
-    // const engine = new ODRLEngineMultipleSteps(); // EYE JS engine
-    const engine = new ODRLEngineMultipleSteps(new EyeReasoner(eye_bin, ["--quiet", "--nope", "--pass-only-new"])); // EYE local
+    let engine;
+
+    if (eye_bin) {
+        engine = new ODRLEngineMultipleSteps({reasoner: new EyeReasoner(eye_bin, ["--quiet", "--nope", "--pass-only-new"])}); // EYE local
+    }
+    else {
+        engine = new ODRLEngineMultipleSteps(); // EYE JS engine 
+    }
     const evaluator = new ODRLEvaluator(engine);
     const reasoningResult = await evaluator.evaluate(
         odrlPolicyStore.getQuads(null, null, null, null),

@@ -16,13 +16,19 @@ import {
 import 'dotenv/config';
 
 describe('The test suite for the ODRL evaluator', () => {
-    const eye_bin = process.env.EYE_BIN || '/usr/local/bin/eye';
+    const eye_bin = process.env.EYE_BIN;
 
     const rootDir = path.join(__dirname, "..", "..", "data");
 
+    let engine;
 
-    // const engine = new ODRLEngineMultipleSteps(); // EYE JS engine
-    const engine = new ODRLEngineMultipleSteps({reasoner:new EyeReasoner(eye_bin, ["--quiet", "--nope", "--pass-only-new"])}); // EYE local
+    if (eye_bin) {
+        engine = new ODRLEngineMultipleSteps({reasoner:new EyeReasoner(eye_bin, ["--quiet", "--nope", "--pass-only-new"])}); // EYE local
+    }
+    else {
+        engine = new ODRLEngineMultipleSteps(); 
+    }
+
     const odrlEvaluator = new ODRLEvaluator(engine);
     let testCaseEvaluator: TestCaseEvaluator;
     let testCaseMap: Map<string, TestCase> = new Map();

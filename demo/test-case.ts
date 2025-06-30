@@ -12,7 +12,7 @@ const rootDir = path.join(__dirname, "..", "data");
 
 
 async function main() {
-    const eye_bin = process.env.EYE_BIN || '/usr/local/bin/eye';
+    const eye_bin = process.env.EYE_BIN;
     
     console.log(`Loading all test cases: policies, requests and test case (state of the world, expected compliance report and test case)`);
 
@@ -21,8 +21,15 @@ async function main() {
     testCaseMap.forEach((testCase)=> testCases.push(testCase));
 
     // evaluate function -> loop over test cases and evaluate
-    // const engine = new ODRLEngineMultipleSteps(); // EYE JS engine
-    const engine = new ODRLEngineMultipleSteps({reasoner:new EyeReasoner(eye_bin, ["--quiet", "--nope", "--pass-only-new"])}); // EYE local
+    let engine;
+
+    if (eye_bin) {
+        engine = new ODRLEngineMultipleSteps({reasoner:new EyeReasoner(eye_bin, ["--quiet", "--nope", "--pass-only-new"])}); // EYE local
+    }
+    else {
+        engine = new ODRLEngineMultipleSteps(); // EYE JS engine 
+    }
+    
     const odrlEvaluator = new ODRLEvaluator(engine);
     const comparison = ComplianceReportComparator.simple;
     const testCaseEvaluator = new TestCaseEvaluator(odrlEvaluator, comparison);

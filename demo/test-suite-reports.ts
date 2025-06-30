@@ -14,15 +14,22 @@ import {
 } from "../src";
 import 'dotenv/config';
 
-const eye_bin = process.env.EYE_BIN || '/usr/local/bin/eye';
+const eye_bin = process.env.EYE_BIN;
 
 // Note: this can give problems -> need proper cli functionality with default current rootDir
 const rootDir = path.join(__dirname, "..", "data");
 const documentationDir = path.join(rootDir, "documentation");
 const resultsDir = path.join(rootDir, "results");
 
-// const engine = new ODRLEngineMultipleSteps(); // EYE JS engine
-const engine = new ODRLEngineMultipleSteps({reasoner:new EyeReasoner(eye_bin, ["--quiet", "--nope", "--pass-only-new"])}); // EYE local
+let engine;
+
+if (eye_bin) {
+    engine = new ODRLEngineMultipleSteps({reasoner:new EyeReasoner(eye_bin, ["--quiet", "--nope", "--pass-only-new"])}); // EYE local
+}
+else {
+    engine = new ODRLEngineMultipleSteps(); // EYE JS engine 
+}
+
 const odrlEvaluator = new ODRLEvaluator(engine);
 const comparison = ComplianceReportComparator.simple;
 const testCaseEvaluator = new TestCaseEvaluator(odrlEvaluator, comparison);

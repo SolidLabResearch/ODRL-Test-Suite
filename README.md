@@ -49,6 +49,8 @@ Install the required packages:
 npm install
 ```
 
+## Optional
+
 Install the EYE reasoner: https://github.com/eyereasoner/eye
 
 Create a configuation file:
