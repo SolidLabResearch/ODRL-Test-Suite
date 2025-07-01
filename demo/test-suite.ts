@@ -8,13 +8,15 @@ import {
     TestCaseEvaluation,
     TestCaseEvaluator
 } from "../src";
-
+import 'dotenv/config';
 
 // Note: this can give problems -> need proper cli functionality with default current rootDir
 const rootDir = path.join(__dirname, "..", "data");
 
 
 async function main() {
+    const eye_bin = process.env.EYE_BIN;
+
     console.log(`Loading all test cases: policies, requests and test case (state of the world, expected compliance report and test case)`);
 
     const testCaseMap = await loadTestSuite(rootDir);
@@ -23,8 +25,15 @@ async function main() {
     console.log(`Test cases loaded.`);
 
     // evaluate function -> loop over test cases and evaluate
-    // const engine = new ODRLEngineMultipleSteps(); // EYE JS engine
-    const engine = new ODRLEngineMultipleSteps({reasoner: new EyeReasoner('/usr/local/bin/eye', ["--quiet", "--nope", "--pass-only-new"])}); // EYE local
+    let engine;
+
+    if (eye_bin) {
+        engine = new ODRLEngineMultipleSteps({reasoner: new EyeReasoner(eye_bin, ["--quiet", "--nope", "--pass-only-new"])}); // EYE local
+    }
+    else {
+        engine = new ODRLEngineMultipleSteps(); // EYE JS engine 
+    }
+
     const odrlEvaluator = new ODRLEvaluator(engine);
     const comparison = ComplianceReportComparator.simple;
     const testCaseEvaluator = new TestCaseEvaluator(odrlEvaluator, comparison);

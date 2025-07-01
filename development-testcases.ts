@@ -3,6 +3,8 @@ import { ODRLEngineMultipleSteps, ODRLEvaluator, turtleStringToStore, resourceTo
 import { getPolicyIdentifier, getReportIdentifier, getRequestIdentifier, getStateOfTheWorldIdentifier, parsePolicies, parseRequests, parseStateOfTheWorld, Policy, StateOfTheWorld, TestCase, testCaseAsQuads } from "./src/index"
 import { v4 } from "uuid";
 import * as path from "path";
+import 'dotenv/config';
+
 enum CONFIG {
     NEW,
     REUSE
@@ -166,6 +168,8 @@ ex:alice a foaf:Person;
 `;
 
 async function main() {
+    const eye_bin = process.env.EYE_BIN || '/usr/local/bin/eye';
+
     // parse input
     const odrlPolicyStore = await turtleStringToStore(odrlPolicyText);
     const odrlRequestStore = await turtleStringToStore(odrlRequestText);
@@ -187,7 +191,7 @@ async function main() {
     
     // evaluator (assumes proper policies, requests and sotw)
     // const engine = new ODRLEngineMultipleSteps(); // EYE JS engine
-    const engine = new ODRLEngineMultipleSteps({reasoner: new EyeReasoner('/usr/local/bin/eye', ["--quiet", "--nope", "--pass-only-new"])}); // EYE local
+    const engine = new ODRLEngineMultipleSteps({reasoner: new EyeReasoner(eye_bin, ["--quiet", "--nope", "--pass-only-new"])}); // EYE local
     const evaluator = new ODRLEvaluator(engine);
 
     const reasoningResult = await evaluator.evaluate(

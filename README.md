@@ -39,6 +39,26 @@ During this process, count is tracked of (i) the amount of test cases, (ii) the 
 
 Note: currently, the state of the world and the expected compliance report are added in the serialization of a test case.
 
+## Install
+
+Note: only [Nodejs](https://nodejs.org/en) `v18.18.2` and [npm](https://www.npmjs.com/) `9.8.1` is tested
+
+Install the required packages:
+
+```sh
+npm install
+```
+
+## Optional
+
+Install the EYE reasoner: https://github.com/eyereasoner/eye
+
+Create a configuation file:
+
+```
+cp .env-example .env
+```
+
 ## How to run the test-suite
 
 The [`test-suite.ts`](./demo/test-suite.ts) contains the code that runs the test suite.
@@ -47,24 +67,18 @@ The directories for the `loadTestCases` are hardcoded constants which expect the
 
 ```sh
 data/
-└── ODRL
-    ├── policies
-    ├── requests
-    ├── sotw
-    └── test_cases
+  ├── policies
+  ├── requests
+  ├── sotw
+  └── test_cases
 ```
 
-First, the packages need to be installed
-```sh
-npm install
-```
+Run the test suite:
 
-Then, run the test suite:
 ```sh
 npx ts-node demo/test-suite.ts
 ```
 
-Note: only [Nodejs](https://nodejs.org/en) `v18.18.2` and [npm](https://www.npmjs.com/) `9.8.1` is tested
 
 Following code shows how to run the test suite.
 
