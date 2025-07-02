@@ -8,15 +8,20 @@ import {
 } from "../src";
 import 'dotenv/config';
 
+const DEMO_TEST_CASE = 'urn:uuid:1c47df55-a53d-4740-93a8-614fc3ea9a1b'; // testcase-059
 const rootDir = path.join(__dirname, "..", "data");
+
+let TEST_CASE_ID;
 
 if (process.argv.length != 3) {
     console.error(`usage: ${process.argv[1]} id`);
-    console.error(`e.g. id = urn:uuid:1c47df55-a53d-4740-93a8-614fc3ea9a1b`);
-    process.exit(1);
+    console.error(`e.g. id = ${DEMO_TEST_CASE}`);
+    console.error(`\n👉 No id provided, using ${DEMO_TEST_CASE}\n`);
+    TEST_CASE_ID = DEMO_TEST_CASE;
 }
-
-const TEST_CASE_ID = process.argv[2];
+else {
+    TEST_CASE_ID = process.argv[2];
+}
 
 async function main() {
     const eye_bin = process.env.EYE_BIN;
