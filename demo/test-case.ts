@@ -49,11 +49,11 @@ async function main() {
     const testCase = testCaseMap.get(TEST_CASE_ID);
 
     if (! testCase) {
-        console.error(`no such testCase ${TEST_CASE_ID}`);
+        console.error(`No such test case: ${TEST_CASE_ID}`);
         process.exit(2);
     }
     else {
-        console.error(`\nEvaluating test case:\n  ${testCase.title}\n`);
+        console.error(`Evaluating test case:\n  ${testCase.title}\n`);
     }
 
     const result1 =await testCaseEvaluator.evaluateAndCompare(testCase);
