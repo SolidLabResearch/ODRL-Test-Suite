@@ -26,7 +26,7 @@ else {
 async function main() {
     const eye_bin = process.env.EYE_BIN;
     
-    console.log(`Loading all test cases: policies, requests and test case (state of the world, expected compliance report and test case)`);
+    console.error(`Loading all test cases: policies, requests and test case (state of the world, expected compliance report and test case)`);
 
     const testCaseMap = await loadTestSuite(rootDir);
     const testCases: TestCase[] = [];
@@ -51,6 +51,9 @@ async function main() {
     if (! testCase) {
         console.error(`no such testCase ${TEST_CASE_ID}`);
         process.exit(2);
+    }
+    else {
+        console.error(`\nEvaluating test case:\n  ${testCase.title}\n`);
     }
 
     const result1 =await testCaseEvaluator.evaluateAndCompare(testCase);

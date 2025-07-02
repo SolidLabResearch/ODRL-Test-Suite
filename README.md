@@ -82,7 +82,7 @@ npx ts-node demo/test-suite.ts
 Run the test on a particular test case (requires the identifier of the test case):
 
 ```sh
-npx ts-node mode/test-case.ts <test-case-id>
+npx ts-node demo/test-case.ts <test-case-id>
 ```
 
 ## How to run the test suite from Typescript
