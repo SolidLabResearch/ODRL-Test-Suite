@@ -59,7 +59,7 @@ Create a configuation file:
 cp .env-example .env
 ```
 
-## How to run the test-suite
+## How to run the test-suite from the command line
 
 The [`test-suite.ts`](./demo/test-suite.ts) contains the code that runs the test suite.
 
@@ -79,6 +79,13 @@ Run the test suite:
 npx ts-node demo/test-suite.ts
 ```
 
+Run the test on a particular test case (requires the identifier of the test case):
+
+```sh
+npx ts-node demo/test-case.ts <test-case-id>
+```
+
+## How to run the test suite from Typescript
 
 Following code shows how to run the test suite.
 
