@@ -10,6 +10,13 @@ import 'dotenv/config';
 
 const rootDir = path.join(__dirname, "..", "data");
 
+if (process.argv.length != 3) {
+    console.error(`usage: ${process.argv[1]} id`);
+    console.error(`e.g. id = urn:uuid:1c47df55-a53d-4740-93a8-614fc3ea9a1b`);
+    process.exit(1);
+}
+
+const TEST_CASE_ID = process.argv[2];
 
 async function main() {
     const eye_bin = process.env.EYE_BIN;
@@ -34,7 +41,14 @@ async function main() {
     const comparison = ComplianceReportComparator.simple;
     const testCaseEvaluator = new TestCaseEvaluator(odrlEvaluator, comparison);
 
-    const result1 =await testCaseEvaluator.evaluateAndCompare(testCaseMap.get("urn:uuid:1c47df55-a53d-4740-93a8-614fc3ea9a1b")!) //test case 59
+    const testCase = testCaseMap.get(TEST_CASE_ID);
+
+    if (! testCase) {
+        console.error(`no such testCase ${TEST_CASE_ID}`);
+        process.exit(2);
+    }
+
+    const result1 =await testCaseEvaluator.evaluateAndCompare(testCase);
 
     console.log(resourceToOptimisedTurtle(result1.evaluation.quads,{}));
     
