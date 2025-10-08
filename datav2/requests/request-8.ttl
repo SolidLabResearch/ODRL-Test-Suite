@@ -1,0 +1,11 @@
+@prefix ex: <http://example.org/> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sotw: <https://w3id.org/force/sotw#> .
+
+<urn:uuid:df1566c9-a18b-444f-a1fa-98b976d411eb> a sotw:EvaluationRequest ;
+  <http://purl.org/dc/terms/issued> "2016-01-01T00:00:00.000Z"^^xsd:dateTime ;
+  sotw:requestedAction odrl:read ;
+  sotw:requestingParty ex:bob ;
+  sotw:requestedTarget ex:x ;
+  <http://purl.org/dc/terms/description> "Requesting Party BOB requests to READ resource X." .
