@@ -1,9 +1,10 @@
-import { Writer } from "n3";
 import * as path from "path";
 import {
     loadTestSuite,
     TestCase
 } from "../src";
+import { prefixes } from "odrl-evaluator";
+import { write } from "@jeswr/pretty-turtle/dist"
 
 const rootDir = path.join(__dirname,"..", "data");
 // create tests that can be used within the ODRL Evaluator
@@ -28,12 +29,11 @@ async function main(){
         if (unresolvedTestcases.includes(testCase.identifier)){
             continue;
         }
-        jestTests.push(jestTest(testCase));
+        jestTests.push(await jestTest(testCase));
     }
 
     const jestString =
-`import { isomorphic } from "rdf-isomorphic";
-import { ODRLEngineMultipleSteps, ODRLEvaluator, blanknodeify } from "../../src";
+`import { ODRLEngineMultipleSteps, ODRLEvaluator, blanknodeify } from "../../src";
 import { Parser, Quad } from "n3";
 import "jest-rdf";
 
@@ -44,24 +44,22 @@ describe('The ODRL evaluator succeeds following test case ', () => {
     ${jestTests.join('\n')}
           
 })
-    `
+`    
     console.log(jestString);
     
 }
 main()
 
-function jestTest(testCase: TestCase): string{
-    const writer = new Writer()
-
+async function jestTest(testCase: TestCase): Promise<string>{
     return `    it('${testCase.identifier}: ${testCase.title}', async () => {
         
-    const odrlPolicy = \`${writer.quadsToString(testCase.policy.quads)}\`;
-const odrlRequest = \`${writer.quadsToString(testCase.request.quads)}\`;
-const sotw = \`${writer.quadsToString(testCase.stateOfTheWorld.quads)}\`;
-const expectedReport = \`${writer.quadsToString(testCase.expectedReport.quads)}\`;
-const report = await odrlEvaluator.evaluate(parser.parse(odrlPolicy), parser.parse(odrlRequest), parser.parse(sotw));
+    const odrlPolicy = \`${await write(testCase.policy.quads, {prefixes})}\`;
+    const odrlRequest = \`${await write(testCase.request.quads, {prefixes})}\`;
+    const sotw = \`${await write(testCase.stateOfTheWorld.quads, {prefixes})}\`;
+    const expectedReport = \`${await write(testCase.expectedReport.quads, {prefixes})}\`;
+    const report = await odrlEvaluator.evaluate(parser.parse(odrlPolicy), parser.parse(odrlRequest), parser.parse(sotw));
 
-expect(blanknodeify(report as any as Quad[])).toBeRdfIsomorphic(blanknodeify(parser.parse(expectedReport)));
-});
+    expect(blanknodeify(report as any as Quad[])).toBeRdfIsomorphic(blanknodeify(parser.parse(expectedReport)));
+    });
 `
 }

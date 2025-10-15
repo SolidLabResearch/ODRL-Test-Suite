@@ -10,5 +10,6 @@
     ex:includes temp:currentTime, ex:x, ex:alice.
 temp:currentTime dct:issued "2024-02-12T11:20:10.999Z"^^xsd:dateTime.
 ex:alice a foaf:Person;
-    odrl:partOf ex:partyIdentifier.
-ex:x odrl:partOf ex:assetIdentifier.
+    odrl:partOf ex:partyCollection . 
+
+ex:x odrl:partOf ex:assetCollection.
