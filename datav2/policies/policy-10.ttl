@@ -1,0 +1,21 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/>.
+@prefix ex: <http://example.org/>.
+@prefix temp: <http://example.com/request/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix report: <https://w3id.org/force/compliance-report#>.
+
+<urn:uuid:16aa64e3-1495-486d-a5ad-81211961e915> a odrl:Set;
+    odrl:uid <urn:uuid:16aa64e3-1495-486d-a5ad-81211961e915>;
+    dct:description "ALICE may NOT READ resource X at 2024-02-12T11:20:10.999Z.";
+    dct:source <https://github.com/SolidLabResearch/ODRL-Test-Suite/>;
+    odrl:permission <urn:uuid:512ad75a-22da-4142-ba42-0a39a217ba29>.
+<urn:uuid:512ad75a-22da-4142-ba42-0a39a217ba29> a odrl:Permission;
+    odrl:assignee ex:alice;
+    odrl:action odrl:read;
+    odrl:target ex:x;
+    odrl:constraint <urn:uuid:constraint:86526f9b-57c2-4c94-b079-9762fec562f1>.
+<urn:uuid:constraint:86526f9b-57c2-4c94-b079-9762fec562f1> odrl:leftOperand odrl:dateTime;
+    odrl:operator odrl:neq;
+    odrl:rightOperand "2024-02-12T11:20:10.999Z"^^xsd:dateTime.

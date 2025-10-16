@@ -1,0 +1,21 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/>.
+@prefix ex: <http://example.org/>.
+@prefix temp: <http://example.com/request/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix report: <https://w3id.org/force/compliance-report#>.
+
+<urn:uuid:dfd89db7-7a03-4457-80ae-2f4b92c8e1ad> a odrl:Set;
+    odrl:uid <urn:uuid:dfd89db7-7a03-4457-80ae-2f4b92c8e1ad>;
+    dct:description "ALICE may READ resource X when it is later than or equal to 2024-02-12T11:20:10.999Z.";
+    dct:source <https://github.com/SolidLabResearch/ODRL-Test-Suite/>;
+    odrl:permission <urn:uuid:8e8bdcbd-3b76-485a-a279-fb3df060aa06>.
+<urn:uuid:8e8bdcbd-3b76-485a-a279-fb3df060aa06> a odrl:Permission;
+    odrl:assignee ex:alice;
+    odrl:action odrl:read;
+    odrl:target ex:x;
+    odrl:constraint <urn:uuid:constraint:86526f9b-57c2-4c94-b079-9762fec562f1>.
+<urn:uuid:constraint:86526f9b-57c2-4c94-b079-9762fec562f1> odrl:leftOperand odrl:dateTime;
+    odrl:operator odrl:gteq;
+    odrl:rightOperand "2024-02-12T11:20:10.999Z"^^xsd:dateTime.

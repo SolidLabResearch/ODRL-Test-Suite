@@ -147,7 +147,7 @@ export const ODRL = createVocabulary(
     'read'
 );
 
-export const SOTW = createVocabulary(
+export const SOTWold = createVocabulary(
     'http://example.org/',
     'Sotw',
     'includes'
@@ -208,4 +208,25 @@ export const XSD = createVocabulary(
     'http://www.w3.org/2001/XMLSchema#',
     'boolean',
     'dateTime'
+)
+
+
+export const SOTW = createVocabulary(
+    'https://w3id.org/force/sotw#',
+    'SotW',
+    'EvaluationRequest',
+    'currentTime',
+    'currentLocation',
+    'assetCollection',
+    'partyCollection',
+    'existingReport',
+    'count',
+    'event',
+    'accumulatedTime',
+    'recipient',
+    'paidAmount',
+    'requestedAction',
+    'requestingParty',
+    'requestedTarget',
+    'context'
 )

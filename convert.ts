@@ -1,9 +1,10 @@
 import {
     ComplianceReportComparator,
-    loadTestSuite, parseRequests, Policy, resourceToOptimisedTurtle,
+    loadTestSuite,
+    loadTestSuiteOld, parseRequests, Policy, resourceToOptimisedTurtle,
     runComparisonTestSuite,
     runTestSuite,
-    SOTW,
+    SOTWold,
     storeTestCase,
     TestCase,
     TestCaseEvaluation,
@@ -24,7 +25,7 @@ const documentationDir = path.join(newDataRootDir, "documentation");
 async function main() {
     console.log(`Loading all original test cases: policies, requests and test case (state of the world, expected compliance report and test case)`);
 
-    const testCaseMap = await loadTestSuite(originalDataRootDir);
+    const testCaseMap = await loadTestSuiteOld(originalDataRootDir);
     const testCases: TestCase[] = [];
     testCaseMap.forEach((testCase) => testCases.push(testCase));
     console.log(`Test cases loaded.`);
@@ -43,19 +44,10 @@ async function main() {
 
     console.log('check that the identifiers and amount are equal');
     const originalSotwIds = testCases.map(testcase => testcase.stateOfTheWorld.identifier)
-    const newSotwIds: string[] = []
-    newTestCases.forEach(testcase => {
-        const sotwStore = new Store(testcase.stateOfTheWorld.quads)
-        const sotwSubjects = sotwStore.getSubjects(RDF.terms.type, "https://w3id.org/force/sotw#Sotw", null)
-        if (sotwSubjects.length === 1) {
-            const sotwSubject = sotwSubjects[0].value
-            newSotwIds.push(sotwSubject)
-        } else {
-            console.log(testcase.title);
-            console.log(new Writer().quadsToString(testcase.stateOfTheWorld.quads))
-        }
-    }
-    )
+    const newSotwIds = newTestCases.map(testcase => testcase.stateOfTheWorld.identifier)
+
+    const originalRequestIds = testCases.map(testcase => testcase.request.identifier)
+    const newRequestsIds = newTestCases.map(testcase => testcase.request.identifier)
 
     // checking whether they are equal
     function areListsEqual(list1: string[], list2: string[]): boolean {
@@ -66,17 +58,19 @@ async function main() {
 
         return sorted1.every((value, index) => value === sorted2[index]);
     }
-    console.log(newSotwIds);
+    console.log('Equality of state of the world: ' + areListsEqual(originalSotwIds, newSotwIds));
+    console.log('Equality of Evaluation request: ' + areListsEqual(originalRequestIds, newRequestsIds));
 
-    console.log('Equality: ' + areListsEqual(originalSotwIds, newSotwIds));
-
-
-
-
-
+    // they are equal, so lets store them
+        for (const testCase of newTestCases) {
+            // I deliberately run these. If they make changes in the documentation (which should always be correct), then it means either a policy, request state of the world or expected compliance report has changed.
+            // If this was not desireable action MUST be undertaken by the repository owner(s)!!
+            storeTestCase(testCase, documentationDir);
+        }
 }
-// main()
+main()
 
+// converts old requests to new requests
 async function convertRequests(){
     const requestDir = 'requests'
     const oldRequestDir = path.join(originalDataRootDir, requestDir)
@@ -105,7 +99,7 @@ async function convertRequests(){
         
     }
 }
-convertRequests()
+// convertRequests()
 
 /**
  * Transforms the evaluation request (quads) (old version*) 

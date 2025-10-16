@@ -6,7 +6,7 @@
 @prefix report: <https://w3id.org/force/compliance-report#>.
 @prefix sotw: <https://w3id.org/force/sotw#> .
 
-<urn:uuid:da98666e-e80d-429a-a839-1575f85a9b3c> a sotw:Sotw;
+<urn:uuid:da98666e-e80d-429a-a839-1575f85a9b3c> a sotw:SotW;
     sotw:currentTime ex:currentTime ;
     sotw:partyCollection ex:partyCollection;
     sotw:existingReport <urn:uuid:17ced35e-39ff-427d-a9c8-cfa4c5f44d1b> .

@@ -1,0 +1,30 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/>.
+@prefix ex: <http://example.org/>.
+@prefix temp: <http://example.com/request/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix report: <https://w3id.org/force/compliance-report#>.
+
+<urn:uuid:790f07c5-2dc2-4782-abcc-410340abad94> a ex:TestCase;
+    dct:title "Any request from Bob to use returns into no (Bob Request).";
+    ex:policy <urn:uuid:e4b538e6-2613-4de4-8930-48fee524aa40>;
+    ex:request <urn:uuid:5be7b7d5-bc05-4168-8b31-81ebc32cfaa0>;
+    ex:sotw <urn:uuid:d63ea76e-0aed-4e4e-9a8c-0b7083ebc6e2>;
+    ex:expectedReport <urn:uuid:011bbf22-2039-4f65-bf9b-2e581fcbc0a8>.
+<urn:uuid:011bbf22-2039-4f65-bf9b-2e581fcbc0a8> a report:PolicyReport;
+    dct:created "2024-02-12T11:20:10.999Z"^^xsd:dateTime;
+    report:policy <urn:uuid:e4b538e6-2613-4de4-8930-48fee524aa40>;
+    report:policyRequest <urn:uuid:5be7b7d5-bc05-4168-8b31-81ebc32cfaa0>;
+    report:ruleReport <urn:uuid:42b203d0-90c8-479f-b127-f04e56cdbd75>.
+<urn:uuid:42b203d0-90c8-479f-b127-f04e56cdbd75> a report:ProhibitionReport;
+    report:attemptState report:Attempted;
+    report:rule <urn:uuid:9477c997-adc1-4d64-a12c-fa9e0f6b80f0>;
+    report:ruleRequest <urn:uuid:5be7b7d5-bc05-4168-8b31-81ebc32cfaa0>;
+    report:premiseReport <urn:uuid:55d0c400-f07e-466e-868d-7216a5770123>, <urn:uuid:24e09513-53a0-4e73-b942-4b35d170cbfd>;
+    report:activationState report:Active.
+<urn:uuid:55d0c400-f07e-466e-868d-7216a5770123> a report:PartyReport;
+    report:satisfactionState report:Satisfied.
+<urn:uuid:24e09513-53a0-4e73-b942-4b35d170cbfd> a report:ActionReport;
+    report:satisfactionState report:Satisfied.
+

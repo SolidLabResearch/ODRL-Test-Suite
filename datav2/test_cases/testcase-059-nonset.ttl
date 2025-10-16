@@ -1,0 +1,32 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/>.
+@prefix ex: <http://example.org/>.
+@prefix temp: <http://example.com/request/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix report: <https://w3id.org/force/compliance-report#>.
+
+<urn:uuid:1c47df55-a53d-4740-93a8-614fc3ea9a1b> a ex:TestCase;
+    dct:title "Read request from Alice to resource X returns into yes, if duty is not violated (Alice Request Read X - duty unknown).";
+    ex:policy <urn:uuid:5aa7f98c-65e0-4ff2-9846-40203203a58a>;
+    ex:request <urn:uuid:1bafee59-006c-46a3-810c-5d176b4be364>;
+    ex:sotw <urn:uuid:8a6c8315-7a08-4f65-af4f-2bec2fd2f21d>;
+    ex:expectedReport <urn:uuid:58f1b205-1b18-4261-b4fc-bee6776f0031>.
+<urn:uuid:58f1b205-1b18-4261-b4fc-bee6776f0031> a report:PolicyReport;
+    dct:created "2024-02-12T11:20:10.999Z"^^xsd:dateTime;
+    report:policy <urn:uuid:5aa7f98c-65e0-4ff2-9846-40203203a58a>;
+    report:policyRequest <urn:uuid:1bafee59-006c-46a3-810c-5d176b4be364>;
+    report:ruleReport <urn:uuid:2ba64a68-1e66-4a3c-ae53-52210b9e899d>.
+<urn:uuid:2ba64a68-1e66-4a3c-ae53-52210b9e899d> a report:PermissionReport;
+    report:attemptState report:Attempted;
+    report:rule <urn:uuid:f21be2f2-5efd-46ca-ac4c-0b37d9b9a526>;
+    report:ruleRequest <urn:uuid:1bafee59-006c-46a3-810c-5d176b4be364>;
+    report:premiseReport <urn:uuid:7a72fefc-5fd5-4be1-bb4f-360247f2fe75>, <urn:uuid:0c420867-f218-41ca-bd6d-dcabd48b956a>, <urn:uuid:032fa9f0-1496-402a-b6c8-34c91bb73a2a>;
+    report:conditionReport <urn:uuid:77bd375c-7095-430a-87e1-6591bf666b75> ;
+    report:activationState report:Active.
+<urn:uuid:7a72fefc-5fd5-4be1-bb4f-360247f2fe75> a report:TargetReport;
+    report:satisfactionState report:Satisfied.
+<urn:uuid:0c420867-f218-41ca-bd6d-dcabd48b956a> a report:PartyReport;
+    report:satisfactionState report:Satisfied.
+<urn:uuid:032fa9f0-1496-402a-b6c8-34c91bb73a2a> a report:ActionReport;
+    report:satisfactionState report:Satisfied.

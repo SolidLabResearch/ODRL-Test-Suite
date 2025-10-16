@@ -1,0 +1,32 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/>.
+@prefix ex: <http://example.org/>.
+@prefix temp: <http://example.com/request/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix report: <https://w3id.org/force/compliance-report#>.
+
+<urn:uuid:ada99890-79ab-4893-9969-69678fe3756c> a ex:TestCase;
+    dct:title "Read request from people in party collection to resource in asset collection returns into yes (Alice Request Read X).";
+    ex:policy <urn:uuid:2dd7d09e-aff1-49bf-bdc5-d50f2a3b5013>;
+    ex:request <urn:uuid:1bafee59-006c-46a3-810c-5d176b4be364>;
+    ex:sotw <urn:uuid:116a8435-a356-45f5-a20f-a1e593d4a55d>;
+    ex:expectedReport <urn:uuid:43dd3176-0d8e-4498-afeb-1aaf3a481371>.
+<urn:uuid:43dd3176-0d8e-4498-afeb-1aaf3a481371> a report:PolicyReport;
+    dct:created "2024-02-12T11:20:10.999Z"^^xsd:dateTime;
+    report:policy <urn:uuid:2dd7d09e-aff1-49bf-bdc5-d50f2a3b5013>;
+    report:policyRequest <urn:uuid:1bafee59-006c-46a3-810c-5d176b4be364>;
+    report:ruleReport <urn:uuid:503ee670-1cd8-42c5-8e39-913589934546>.
+<urn:uuid:503ee670-1cd8-42c5-8e39-913589934546> a report:PermissionReport;
+    report:attemptState report:Attempted;
+    report:rule <urn:uuid:f5d8113b-dd1b-44bd-b95d-76198f346609>;
+    report:ruleRequest <urn:uuid:1bafee59-006c-46a3-810c-5d176b4be364>;
+    report:premiseReport <urn:uuid:4be0248a-e3ea-498b-8cad-fc2288e6620a>, <urn:uuid:aca3b71f-e01e-4362-ba2c-88cbde548ef1>, <urn:uuid:824ea31c-5855-46aa-957f-fc970333987a>;
+    report:activationState report:Active.
+<urn:uuid:4be0248a-e3ea-498b-8cad-fc2288e6620a> a report:TargetReport;
+    report:satisfactionState report:Satisfied.
+<urn:uuid:aca3b71f-e01e-4362-ba2c-88cbde548ef1> a report:PartyReport;
+    report:satisfactionState report:Satisfied.
+<urn:uuid:824ea31c-5855-46aa-957f-fc970333987a> a report:ActionReport;
+    report:satisfactionState report:Satisfied.
+

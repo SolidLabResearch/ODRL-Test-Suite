@@ -1,0 +1,21 @@
+@prefix odrl: <http://www.w3.org/ns/odrl/2/>.
+@prefix ex: <http://example.org/>.
+@prefix temp: <http://example.com/request/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix report: <https://w3id.org/force/compliance-report#>.
+
+<urn:uuid:2dd7d09e-aff1-49bf-bdc5-d50f2a3b5013> a odrl:Set;
+    odrl:uid <urn:uuid:2dd7d09e-aff1-49bf-bdc5-d50f2a3b5013>;
+    dct:description "A party collection may READ any resource from the Asset Collection.";
+    dct:source <https://github.com/SolidLabResearch/ODRL-Test-Suite/>;
+    odrl:permission <urn:uuid:f5d8113b-dd1b-44bd-b95d-76198f346609>.
+<urn:uuid:f5d8113b-dd1b-44bd-b95d-76198f346609> a odrl:Permission;
+    odrl:assignee ex:partyCollection;
+    odrl:action odrl:read;
+    odrl:target ex:assetCollection.
+ex:assetCollection a odrl:AssetCollection;
+    odrl:source ex:assetIdentifier.
+ex:partyCollection a odrl:PartyCollection;
+    odrl:source ex:partyIdentifier.

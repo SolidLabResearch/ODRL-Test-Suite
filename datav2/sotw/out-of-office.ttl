@@ -6,7 +6,7 @@
 @prefix report: <https://w3id.org/force/compliance-report#>.
 @prefix sotw: <https://w3id.org/force/sotw#> .
 
-<urn:uuid:88fcb9ab-2216-49df-860f-3f2a1ac5c397> a sotw:Sotw;
+<urn:uuid:88fcb9ab-2216-49df-860f-3f2a1ac5c397> a sotw:SotW;
     sotw:currentTime ex:currentTime .
 
 ex:currentTime dct:issued "2024-02-12T05:20:10.999Z"^^xsd:dateTime.
