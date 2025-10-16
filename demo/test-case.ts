@@ -11,7 +11,7 @@ import 'dotenv/config';
 const DEMO_TEST_CASE = 'urn:uuid:1c47df55-a53d-4740-93a8-614fc3ea9a1b'; // testcase-059
 const rootDir = path.join(__dirname, "..", "data");
 
-let TEST_CASE_ID;
+let TEST_CASE_ID: string;
 
 if (process.argv.length != 3) {
     console.error(`usage: ${process.argv[1]} id`);

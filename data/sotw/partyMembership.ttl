@@ -9,5 +9,6 @@
 <urn:uuid:2e6995b1-1b7e-4463-9c18-fde444523fef> a ex:Sotw;
     ex:includes temp:currentTime, ex:alice.
 temp:currentTime dct:issued "2024-02-12T11:20:10.999Z"^^xsd:dateTime.
+
 ex:alice a foaf:Person;
-    odrl:partOf ex:partyIdentifier.
+    odrl:partOf ex:partyCollection .

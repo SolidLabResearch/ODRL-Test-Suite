@@ -9,4 +9,4 @@
 <urn:uuid:f048231b-b932-4248-a47d-8653a390247b> a ex:Sotw;
     ex:includes temp:currentTime, ex:x.
 temp:currentTime dct:issued "2024-02-12T11:20:10.999Z"^^xsd:dateTime.
-ex:x odrl:partOf ex:assetIdentifier.
+ex:x odrl:partOf ex:assetCollection.

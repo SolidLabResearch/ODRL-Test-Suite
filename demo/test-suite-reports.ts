@@ -1,6 +1,6 @@
 import { writeFileSync } from "fs";
 import * as path from "path";
-import { ODRLEngineMultipleSteps, ODRLEvaluator, EyeReasoner} from "odrl-evaluator";
+import { ODRLEngineMultipleSteps, ODRLEvaluator, EyeReasoner, ODRLEngine} from "odrl-evaluator";
 import {
     ComplianceReportComparator,
     loadTestSuite, resourceToOptimisedTurtle,
@@ -21,7 +21,7 @@ const rootDir = path.join(__dirname, "..", "data");
 const documentationDir = path.join(rootDir, "documentation");
 const resultsDir = path.join(rootDir, "results");
 
-let engine;
+let engine: ODRLEngine;
 
 if (eye_bin) {
     engine = new ODRLEngineMultipleSteps({reasoner:new EyeReasoner(eye_bin, ["--quiet", "--nope", "--pass-only-new"])}); // EYE local

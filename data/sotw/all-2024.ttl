@@ -10,7 +10,7 @@
     ex:includes temp:currentTime, <urn:uuid:17ced35e-39ff-427d-a9c8-cfa4c5f44d1b>, ex:alice.
 temp:currentTime dct:issued "2024-02-12T11:20:10.999Z"^^xsd:dateTime.
 ex:alice a foaf:Person;
-    odrl:partOf ex:partyIdentifier.
+    odrl:partOf ex:partyCollection .
 <urn:uuid:17ced35e-39ff-427d-a9c8-cfa4c5f44d1b> a report:PolicyReport;
     dct:created "2024-02-12T11:20:10.999Z"^^xsd:dateTime;
     report:policy <urn:uuid:5aa7f98c-65e0-4ff2-9846-40203203a58a>;
