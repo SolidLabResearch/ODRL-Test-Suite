@@ -29,14 +29,12 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
-<urn:uuid:73904e56-0fa9-43b8-8fd7-a45bb9d98c46> a odrl:Request;
-    odrl:uid <urn:uuid:73904e56-0fa9-43b8-8fd7-a45bb9d98c46>;
-    dct:description "Requesting Party BOB requests to WRITE resource Y.";
-    odrl:permission <urn:uuid:68ae9b26-69d2-48cf-83e6-ef77c4a9cda9>.
-<urn:uuid:68ae9b26-69d2-48cf-83e6-ef77c4a9cda9> a odrl:Permission;
-    odrl:assignee ex:bob;
-    odrl:action odrl:write;
-    odrl:target ex:y.
+<urn:uuid:73904e56-0fa9-43b8-8fd7-a45bb9d98c46> a <https://w3id.org/force/sotw#EvaluationRequest>;
+    dct:issued "2016-01-01T00:00:00.000Z"^^xsd:dateTime;
+    <https://w3id.org/force/sotw#requestedAction> odrl:write;
+    <https://w3id.org/force/sotw#requestingParty> ex:bob;
+    <https://w3id.org/force/sotw#requestedTarget> ex:y;
+    dct:description "Requesting Party BOB requests to WRITE resource Y.".
 ```
 ## State of the world
 ```ttl
@@ -48,7 +46,9 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
-temp:currentTime dct:issued "2024-02-12T11:20:10.999Z"^^xsd:dateTime.
+<urn:uuid:d63ea76e-0aed-4e4e-9a8c-0b7083ebc6e2> a <https://w3id.org/force/sotw#SotW>;
+    <https://w3id.org/force/sotw#currentTime> ex:currentTime.
+ex:currentTime dct:issued "2024-02-12T11:20:10.999Z"^^xsd:dateTime.
 ```
 ## Evaluation result: Compliance Report
 ```ttl
@@ -61,14 +61,14 @@ temp:currentTime dct:issued "2024-02-12T11:20:10.999Z"^^xsd:dateTime.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
 <urn:uuid:b00eed8a-d5fa-476a-9558-c839e9ebf262> a report:PolicyReport;
-    dct:created "2017-02-12T11:20:10.999Z"^^xsd:dateTime;
+    dct:created "2024-02-12T11:20:10.999Z"^^xsd:dateTime;
     report:policy <urn:uuid:b0d32e25-f642-4afa-9098-0e23750f7ad6>;
     report:policyRequest <urn:uuid:73904e56-0fa9-43b8-8fd7-a45bb9d98c46>;
     report:ruleReport <urn:uuid:d0216f8e-2281-48db-a846-ff5d6a485664>.
 <urn:uuid:d0216f8e-2281-48db-a846-ff5d6a485664> a report:ProhibitionReport;
     report:attemptState report:Attempted;
     report:rule <urn:uuid:bdc2727b-d28d-4d8b-a9df-bff9546242fe>;
-    report:ruleRequest <urn:uuid:68ae9b26-69d2-48cf-83e6-ef77c4a9cda9>;
+    report:ruleRequest <urn:uuid:73904e56-0fa9-43b8-8fd7-a45bb9d98c46>;
     report:premiseReport <urn:uuid:37c4b16c-6f15-4594-bc57-13a5c65877f7>;
     report:activationState report:Active.
 <urn:uuid:37c4b16c-6f15-4594-bc57-13a5c65877f7> a report:ActionReport;

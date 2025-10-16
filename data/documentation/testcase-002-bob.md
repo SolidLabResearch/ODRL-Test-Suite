@@ -28,14 +28,12 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
-<urn:uuid:5be7b7d5-bc05-4168-8b31-81ebc32cfaa0> a odrl:Request;
-    odrl:uid <urn:uuid:5be7b7d5-bc05-4168-8b31-81ebc32cfaa0>;
-    dct:description "Requesting Party BOB requests to READ resource X.";
-    odrl:permission <urn:uuid:0c997117-eefc-474e-9049-c4e3b8defbc7>.
-<urn:uuid:0c997117-eefc-474e-9049-c4e3b8defbc7> a odrl:Permission;
-    odrl:assignee ex:bob;
-    odrl:action odrl:read;
-    odrl:target ex:x.
+<urn:uuid:5be7b7d5-bc05-4168-8b31-81ebc32cfaa0> a <https://w3id.org/force/sotw#EvaluationRequest>;
+    dct:issued "2016-01-01T00:00:00.000Z"^^xsd:dateTime;
+    <https://w3id.org/force/sotw#requestedAction> odrl:read;
+    <https://w3id.org/force/sotw#requestingParty> ex:bob;
+    <https://w3id.org/force/sotw#requestedTarget> ex:x;
+    dct:description "Requesting Party BOB requests to READ resource X.".
 ```
 ## State of the world
 ```ttl
@@ -47,7 +45,9 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
-temp:currentTime dct:issued "2024-02-12T11:20:10.999Z"^^xsd:dateTime.
+<urn:uuid:d63ea76e-0aed-4e4e-9a8c-0b7083ebc6e2> a <https://w3id.org/force/sotw#SotW>;
+    <https://w3id.org/force/sotw#currentTime> ex:currentTime.
+ex:currentTime dct:issued "2024-02-12T11:20:10.999Z"^^xsd:dateTime.
 ```
 ## Evaluation result: Compliance Report
 ```ttl
@@ -60,13 +60,13 @@ temp:currentTime dct:issued "2024-02-12T11:20:10.999Z"^^xsd:dateTime.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
 <urn:uuid:06be7c95-1771-43e8-83d9-18899440c42d> a report:PolicyReport;
-    dct:created "2017-02-12T11:20:10.999Z"^^xsd:dateTime;
+    dct:created "2024-02-12T11:20:10.999Z"^^xsd:dateTime;
     report:policy <urn:uuid:4cbd8f38-348b-4b09-8e1a-04b47c97ad78>;
     report:policyRequest <urn:uuid:5be7b7d5-bc05-4168-8b31-81ebc32cfaa0>;
     report:ruleReport <urn:uuid:41b4b672-6f17-42e1-8fa5-cdac4f231cf0>.
 <urn:uuid:41b4b672-6f17-42e1-8fa5-cdac4f231cf0> a report:PermissionReport;
     report:attemptState report:Attempted;
     report:rule <urn:uuid:72e248bf-5f4f-472f-af76-8beca297415c>;
-    report:ruleRequest <urn:uuid:0c997117-eefc-474e-9049-c4e3b8defbc7>;
+    report:ruleRequest <urn:uuid:5be7b7d5-bc05-4168-8b31-81ebc32cfaa0>;
     report:activationState report:Active.
 ```

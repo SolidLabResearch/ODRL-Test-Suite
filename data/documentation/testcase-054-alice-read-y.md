@@ -33,14 +33,12 @@ ex:assetCollection a odrl:AssetCollection;
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
-<urn:uuid:b384ec45-0f24-4be6-86ba-91a749c698ed> a odrl:Request;
-    odrl:uid <urn:uuid:b384ec45-0f24-4be6-86ba-91a749c698ed>;
-    dct:description "Requesting Party Alice requests to READ resource Y.";
-    odrl:permission <urn:uuid:35d4666e-8fbd-4677-8671-2875eee26a1b>.
-<urn:uuid:35d4666e-8fbd-4677-8671-2875eee26a1b> a odrl:Permission;
-    odrl:assignee ex:alice;
-    odrl:action odrl:read;
-    odrl:target ex:y.
+<urn:uuid:b384ec45-0f24-4be6-86ba-91a749c698ed> a <https://w3id.org/force/sotw#EvaluationRequest>;
+    dct:issued "2016-01-01T00:00:00.000Z"^^xsd:dateTime;
+    <https://w3id.org/force/sotw#requestedAction> odrl:read;
+    <https://w3id.org/force/sotw#requestingParty> ex:alice;
+    <https://w3id.org/force/sotw#requestedTarget> ex:y;
+    dct:description "Requesting Party Alice requests to READ resource Y.".
 ```
 ## State of the world
 ```ttl
@@ -52,8 +50,10 @@ ex:assetCollection a odrl:AssetCollection;
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
-temp:currentTime dct:issued "2024-02-12T11:20:10.999Z"^^xsd:dateTime.
-ex:x odrl:partOf ex:assetIdentifier.
+<urn:uuid:f048231b-b932-4248-a47d-8653a390247b> a <https://w3id.org/force/sotw#SotW>;
+    <https://w3id.org/force/sotw#currentTime> ex:currentTime;
+    <https://w3id.org/force/sotw#assetCollection> ex:assetCollection.
+ex:currentTime dct:issued "2024-02-12T11:20:10.999Z"^^xsd:dateTime.
 ```
 ## Evaluation result: Compliance Report
 ```ttl
@@ -73,7 +73,7 @@ ex:x odrl:partOf ex:assetIdentifier.
 <urn:uuid:5692542e-a60d-447f-9f8a-3b4f6cadde29> a report:PermissionReport;
     report:attemptState report:Attempted;
     report:rule <urn:uuid:f4cb5007-e834-4a9c-a62a-091891350c04>;
-    report:ruleRequest <urn:uuid:35d4666e-8fbd-4677-8671-2875eee26a1b>;
+    report:ruleRequest <urn:uuid:b384ec45-0f24-4be6-86ba-91a749c698ed>;
     report:premiseReport <urn:uuid:c6267db4-c2da-4ed7-9382-0f307ce86635>, <urn:uuid:de0f3292-8665-4764-a2a7-c8d37aee9c2a>, <urn:uuid:c5446f77-fc33-4c89-8caa-94db0ee9b75e>;
     report:activationState report:Inactive.
 <urn:uuid:c6267db4-c2da-4ed7-9382-0f307ce86635> a report:TargetReport;

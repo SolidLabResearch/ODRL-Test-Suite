@@ -147,11 +147,6 @@ export const ODRL = createVocabulary(
     'read'
 );
 
-export const SOTWold = createVocabulary(
-    'http://example.org/',
-    'Sotw',
-    'includes'
-)
 export const TEST = createVocabulary(
     'http://example.org/',
     'TestCase',

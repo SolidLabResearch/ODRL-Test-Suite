@@ -29,14 +29,12 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
-<urn:uuid:1bafee59-006c-46a3-810c-5d176b4be364> a odrl:Request;
-    odrl:uid <urn:uuid:1bafee59-006c-46a3-810c-5d176b4be364>;
-    dct:description "Requesting Party ALICE requests to READ resource X.";
-    odrl:permission <urn:uuid:186be541-5857-4ce3-9f03-1a274f16bf59>.
-<urn:uuid:186be541-5857-4ce3-9f03-1a274f16bf59> a odrl:Permission;
-    odrl:assignee ex:alice;
-    odrl:action odrl:read;
-    odrl:target ex:x.
+<urn:uuid:1bafee59-006c-46a3-810c-5d176b4be364> a <https://w3id.org/force/sotw#EvaluationRequest>;
+    dct:issued "2016-01-01T00:00:00.000Z"^^xsd:dateTime;
+    <https://w3id.org/force/sotw#requestedAction> odrl:read;
+    <https://w3id.org/force/sotw#requestingParty> ex:alice;
+    <https://w3id.org/force/sotw#requestedTarget> ex:x;
+    dct:description "Requesting Party ALICE requests to READ resource X.".
 ```
 ## State of the world
 ```ttl
@@ -48,7 +46,9 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
-temp:currentTime dct:issued "2024-02-12T11:20:10.999Z"^^xsd:dateTime.
+<urn:uuid:d63ea76e-0aed-4e4e-9a8c-0b7083ebc6e2> a <https://w3id.org/force/sotw#SotW>;
+    <https://w3id.org/force/sotw#currentTime> ex:currentTime.
+ex:currentTime dct:issued "2024-02-12T11:20:10.999Z"^^xsd:dateTime.
 ```
 ## Evaluation result: Compliance Report
 ```ttl
@@ -61,14 +61,14 @@ temp:currentTime dct:issued "2024-02-12T11:20:10.999Z"^^xsd:dateTime.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
 <urn:uuid:6094d6c2-99bb-4c07-a257-19e61b0256e8> a report:PolicyReport;
-    dct:created "2017-02-12T11:20:10.999Z"^^xsd:dateTime;
+    dct:created "2024-02-12T11:20:10.999Z"^^xsd:dateTime;
     report:policy <urn:uuid:b0d32e25-f642-4afa-9098-0e23750f7ad6>;
     report:policyRequest <urn:uuid:1bafee59-006c-46a3-810c-5d176b4be364>;
     report:ruleReport <urn:uuid:cb6ef7c7-8447-4e9c-bdb4-c4f5dd93a16b>.
 <urn:uuid:cb6ef7c7-8447-4e9c-bdb4-c4f5dd93a16b> a report:ProhibitionReport;
     report:attemptState report:Attempted;
     report:rule <urn:uuid:bdc2727b-d28d-4d8b-a9df-bff9546242fe>;
-    report:ruleRequest <urn:uuid:186be541-5857-4ce3-9f03-1a274f16bf59>;
+    report:ruleRequest <urn:uuid:1bafee59-006c-46a3-810c-5d176b4be364>;
     report:premiseReport <urn:uuid:432df964-11f9-4329-88f6-f9fae42fa433>;
     report:activationState report:Active.
 <urn:uuid:432df964-11f9-4329-88f6-f9fae42fa433> a report:ActionReport;

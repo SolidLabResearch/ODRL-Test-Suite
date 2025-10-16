@@ -35,14 +35,12 @@ ex:partyCollection a odrl:PartyCollection;
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
-<urn:uuid:b384ec45-0f24-4be6-86ba-91a749c698ed> a odrl:Request;
-    odrl:uid <urn:uuid:b384ec45-0f24-4be6-86ba-91a749c698ed>;
-    dct:description "Requesting Party Alice requests to READ resource Y.";
-    odrl:permission <urn:uuid:35d4666e-8fbd-4677-8671-2875eee26a1b>.
-<urn:uuid:35d4666e-8fbd-4677-8671-2875eee26a1b> a odrl:Permission;
-    odrl:assignee ex:alice;
-    odrl:action odrl:read;
-    odrl:target ex:y.
+<urn:uuid:b384ec45-0f24-4be6-86ba-91a749c698ed> a <https://w3id.org/force/sotw#EvaluationRequest>;
+    dct:issued "2016-01-01T00:00:00.000Z"^^xsd:dateTime;
+    <https://w3id.org/force/sotw#requestedAction> odrl:read;
+    <https://w3id.org/force/sotw#requestingParty> ex:alice;
+    <https://w3id.org/force/sotw#requestedTarget> ex:y;
+    dct:description "Requesting Party Alice requests to READ resource Y.".
 ```
 ## State of the world
 ```ttl
@@ -54,10 +52,11 @@ ex:partyCollection a odrl:PartyCollection;
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
-temp:currentTime dct:issued "2024-02-12T11:20:10.999Z"^^xsd:dateTime.
-ex:x odrl:partOf ex:assetIdentifier.
-ex:alice a foaf:Person;
-    odrl:partOf ex:partyIdentifier.
+<urn:uuid:116a8435-a356-45f5-a20f-a1e593d4a55d> a <https://w3id.org/force/sotw#SotW>;
+    <https://w3id.org/force/sotw#currentTime> ex:currentTime;
+    <https://w3id.org/force/sotw#assetCollection> ex:assetCollection;
+    <https://w3id.org/force/sotw#partyCollection> ex:partyCollection.
+ex:currentTime dct:issued "2024-02-12T11:20:10.999Z"^^xsd:dateTime.
 ```
 ## Evaluation result: Compliance Report
 ```ttl
@@ -77,7 +76,7 @@ ex:alice a foaf:Person;
 <urn:uuid:6bf89816-6ea4-48b9-be7e-4ef896b188ea> a report:PermissionReport;
     report:attemptState report:Attempted;
     report:rule <urn:uuid:f5d8113b-dd1b-44bd-b95d-76198f346609>;
-    report:ruleRequest <urn:uuid:35d4666e-8fbd-4677-8671-2875eee26a1b>;
+    report:ruleRequest <urn:uuid:b384ec45-0f24-4be6-86ba-91a749c698ed>;
     report:premiseReport <urn:uuid:0677d800-0bd8-4839-9175-33d8039105f1>, <urn:uuid:12e79b26-0ca6-4ada-9dd0-1faf0a952921>, <urn:uuid:44f71303-b6c2-4330-b790-5628b6778ee1>;
     report:activationState report:Inactive.
 <urn:uuid:0677d800-0bd8-4839-9175-33d8039105f1> a report:TargetReport;

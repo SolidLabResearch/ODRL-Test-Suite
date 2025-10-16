@@ -51,39 +51,6 @@ export function getRequestIdentifier(quads: Quad[]): string {
     return requestNodes[0].subject.id;
 }
 
-
-/**
- * Get the identifier of an ODRL request.
- * The expectation is that there is only one present.
- * @param quads 
- * @returns 
- */
-export function getRequestIdentifierOld(quads: Quad[]): string {
-    const store = new Store(quads);
-    const requestNodes = store.getQuads(null, RDF.terms.type, ODRL.terms.Request, null);
-
-    if (requestNodes.length !== 1) {
-        throw Error(`Expected one ODRL request identifier. Found ${requestNodes.length}`);
-    }
-    return requestNodes[0].subject.id;
-}
-
-/**
- * Get the identifier of an ODRL request.
- * The expectation is that there is only one present.
- * @param quads 
- * @returns 
- */
-export function getEvaluationRequestIdentifier(quads: Quad[]): string {
-    const store = new Store(quads);
-    const requestNodes = store.getQuads(null, RDF.terms.type, SOTW.terms.EvaluationRequest, null);
-
-    if (requestNodes.length !== 1) {
-        throw Error(`Expected one ODRL request identifier. Found ${requestNodes.length}`);
-    }
-    return requestNodes[0].subject.id;
-}
-
 /**
  * Create a {@link Policy} given a {@link Store}.
  * This will only succeed when there is only one ODRL policy present in the store.
@@ -116,7 +83,7 @@ export function getPolicy(store: Store, policyID?: string, sourceFileName?: stri
  * @returns 
  */
 export function getRequest(store: Store, requestID?: string, sourceFileName?: string): Policy {
-    const requestIDinStore = getRequestIdentifierOld(store.getQuads(null, null, null, null));
+    const requestIDinStore = getRequestIdentifier(store.getQuads(null, null, null, null));
     if (requestID !== undefined && requestID !== requestIDinStore) {
         throw Error("Request ID extracted from graph does not match provided");
     }

@@ -47,14 +47,12 @@ ex:partyCollection a odrl:PartyCollection;
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
-<urn:uuid:73904e56-0fa9-43b8-8fd7-a45bb9d98c46> a odrl:Request;
-    odrl:uid <urn:uuid:73904e56-0fa9-43b8-8fd7-a45bb9d98c46>;
-    dct:description "Requesting Party BOB requests to WRITE resource Y.";
-    odrl:permission <urn:uuid:68ae9b26-69d2-48cf-83e6-ef77c4a9cda9>.
-<urn:uuid:68ae9b26-69d2-48cf-83e6-ef77c4a9cda9> a odrl:Permission;
-    odrl:assignee ex:bob;
-    odrl:action odrl:write;
-    odrl:target ex:y.
+<urn:uuid:73904e56-0fa9-43b8-8fd7-a45bb9d98c46> a <https://w3id.org/force/sotw#EvaluationRequest>;
+    dct:issued "2016-01-01T00:00:00.000Z"^^xsd:dateTime;
+    <https://w3id.org/force/sotw#requestedAction> odrl:write;
+    <https://w3id.org/force/sotw#requestingParty> ex:bob;
+    <https://w3id.org/force/sotw#requestedTarget> ex:y;
+    dct:description "Requesting Party BOB requests to WRITE resource Y.".
 ```
 ## State of the world
 ```ttl
@@ -66,7 +64,11 @@ ex:partyCollection a odrl:PartyCollection;
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
-temp:currentTime dct:issued "2023-02-12T11:20:10.999Z"^^xsd:dateTime.
+<urn:uuid:69ba5872-de47-40d3-bf36-a33b7d44f5bc> a <https://w3id.org/force/sotw#SotW>;
+    <https://w3id.org/force/sotw#currentTime> ex:currentTime;
+    <https://w3id.org/force/sotw#partyCollection> ex:partyCollection;
+    <https://w3id.org/force/sotw#existingReport> <urn:uuid:17ced35e-39ff-427d-a9c8-cfa4c5f44d1b>.
+ex:currentTime dct:issued "2023-02-12T11:20:10.999Z"^^xsd:dateTime.
 <urn:uuid:17ced35e-39ff-427d-a9c8-cfa4c5f44d1b> a report:PolicyReport;
     dct:created "2024-02-12T11:20:10.999Z"^^xsd:dateTime;
     report:policy <urn:uuid:5aa7f98c-65e0-4ff2-9846-40203203a58a>;
@@ -76,8 +78,6 @@ temp:currentTime dct:issued "2023-02-12T11:20:10.999Z"^^xsd:dateTime.
     report:rule <urn:uuid:a0b12cb7-d3a1-4953-86da-f59a597615d2>;
     report:performanceState report:Performed;
     report:deonticState report:Fulfilled.
-ex:alice a foaf:Person;
-    odrl:partOf ex:partyIdentifier.
 ```
 ## Evaluation result: Compliance Report
 ```ttl
@@ -98,7 +98,7 @@ ex:alice a foaf:Person;
     report:premiseReport <urn:uuid:011b652c-7c23-43d4-9836-ce0783465eb9>, <urn:uuid:4d05f868-a4b0-479b-96a7-1f83a6f5c915>, <urn:uuid:a8eddcd4-66be-46b7-b538-5d3371939579>, <urn:uuid:b98f5863-d809-4779-9fd4-7d31bebc7ea7>;
     report:attemptState report:Attempted;
     report:rule <urn:uuid:38578227-70b7-4649-980d-661a57e91b72>;
-    report:ruleRequest <urn:uuid:68ae9b26-69d2-48cf-83e6-ef77c4a9cda9>;
+    report:ruleRequest <urn:uuid:73904e56-0fa9-43b8-8fd7-a45bb9d98c46>;
     report:conditionReport <urn:uuid:ef7b885c-3322-4f79-90d6-aeb6c7e682ec>;
     report:activationState report:Inactive.
 <urn:uuid:011b652c-7c23-43d4-9836-ce0783465eb9> a report:ConstraintReport;

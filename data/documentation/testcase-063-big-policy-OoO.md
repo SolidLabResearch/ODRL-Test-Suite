@@ -2654,14 +2654,12 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
-<urn:uuid:1bafee59-006c-46a3-810c-5d176b4be364> a odrl:Request;
-    odrl:uid <urn:uuid:1bafee59-006c-46a3-810c-5d176b4be364>;
-    dct:description "Requesting Party ALICE requests to READ resource X.";
-    odrl:permission <urn:uuid:186be541-5857-4ce3-9f03-1a274f16bf59>.
-<urn:uuid:186be541-5857-4ce3-9f03-1a274f16bf59> a odrl:Permission;
-    odrl:assignee ex:alice;
-    odrl:action odrl:read;
-    odrl:target ex:x.
+<urn:uuid:1bafee59-006c-46a3-810c-5d176b4be364> a <https://w3id.org/force/sotw#EvaluationRequest>;
+    dct:issued "2016-01-01T00:00:00.000Z"^^xsd:dateTime;
+    <https://w3id.org/force/sotw#requestedAction> odrl:read;
+    <https://w3id.org/force/sotw#requestingParty> ex:alice;
+    <https://w3id.org/force/sotw#requestedTarget> ex:x;
+    dct:description "Requesting Party ALICE requests to READ resource X.".
 ```
 ## State of the world
 ```ttl
@@ -2673,7 +2671,9 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix report: <https://w3id.org/force/compliance-report#>.
 
-temp:currentTime dct:issued "2024-02-12T05:20:10.999Z"^^xsd:dateTime.
+<urn:uuid:88fcb9ab-2216-49df-860f-3f2a1ac5c397> a <https://w3id.org/force/sotw#SotW>;
+    <https://w3id.org/force/sotw#currentTime> ex:currentTime.
+ex:currentTime dct:issued "2024-02-12T05:20:10.999Z"^^xsd:dateTime.
 ```
 ## Evaluation result: Compliance Report
 ```ttl
@@ -2694,7 +2694,7 @@ temp:currentTime dct:issued "2024-02-12T05:20:10.999Z"^^xsd:dateTime.
     report:premiseReport <urn:uuid:b6ed980e-85dd-4cf5-bca0-c1249ce4e53a>, <urn:uuid:8d729197-2624-434f-ab1e-83f5cd5ffa38>, <urn:uuid:011ad3e3-316d-4b6d-8407-e349546ac6c2>, <urn:uuid:d48df096-e4b3-4980-bfe4-abd285934fb8>;
     report:attemptState report:Attempted;
     report:rule <urn:uuid:f5d5f6d7-ef4b-43bc-9838-b79aef793883>;
-    report:ruleRequest <urn:uuid:186be541-5857-4ce3-9f03-1a274f16bf59>;
+    report:ruleRequest <urn:uuid:1bafee59-006c-46a3-810c-5d176b4be364>;
     report:activationState report:Inactive.
 <urn:uuid:b6ed980e-85dd-4cf5-bca0-c1249ce4e53a> a report:ConstraintReport;
     report:constraint <urn:uuid:fe3f0a29-307d-409d-ac71-f0f88c220cb7>;
