@@ -7,14 +7,10 @@
 @prefix sotw: <https://w3id.org/force/sotw#> .
 
 <urn:uuid:da98666e-e80d-429a-a839-1575f85a9b3c> a sotw:SotW;
-    sotw:currentTime ex:currentTime ;
-    sotw:partyCollection ex:partyCollection;
-    sotw:existingReport <urn:uuid:17ced35e-39ff-427d-a9c8-cfa4c5f44d1b> .
+    sotw:context ex:partyCollection, <urn:uuid:17ced35e-39ff-427d-a9c8-cfa4c5f44d1b> .
 
 ex:alice a foaf:Person;
     odrl:partOf ex:partyCollection .
-
-ex:currentTime dct:issued "2024-02-12T11:20:10.999Z"^^xsd:dateTime.
 
 <urn:uuid:17ced35e-39ff-427d-a9c8-cfa4c5f44d1b> a report:PolicyReport;
     dct:created "2024-02-12T11:20:10.999Z"^^xsd:dateTime;

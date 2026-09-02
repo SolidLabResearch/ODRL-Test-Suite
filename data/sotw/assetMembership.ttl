@@ -7,9 +7,6 @@
 @prefix sotw: <https://w3id.org/force/sotw#> .
 
 <urn:uuid:f048231b-b932-4248-a47d-8653a390247b> a sotw:SotW;
-    sotw:currentTime ex:currentTime ;
-    sotw:assetCollection ex:assetCollection .
-
-ex:currentTime dct:issued "2024-02-12T11:20:10.999Z"^^xsd:dateTime.
+    sotw:context ex:assetCollection .
 
 ex:x odrl:partOf ex:assetCollection.
