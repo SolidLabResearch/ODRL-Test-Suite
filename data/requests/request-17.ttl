@@ -1,7 +1,6 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix ex: <http://example.org/> .
 @prefix odrl: <http://www.w3.org/ns/odrl/2/> .
-@prefix dpv: <https://w3id.org/dpv#> .
 @prefix sotw: <https://w3id.org/force/sotw#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
@@ -21,23 +20,3 @@
         sotw:value <https://podpro.dev/id> ;
         sotw:describesFeature sotw:DeliveryChannel ;
     ] .
-    
-
-@prefix ex: <http://example.org/> .
-    @prefix odrl: <http://www.w3.org/ns/odrl/2/> .
-    @prefix sotw: <https://w3id.org/force/sotw#> .
-    
-    <urn:uuid:7433f876-38e9-4e46-9a8e-12b1d4dda622> a odrl:Request ;
-      odrl:uid <urn:uuid:7433f876-38e9-4e46-9a8e-12b1d4dda622> ;
-      odrl:permission <urn:uuid:ce9fc20> .
-    
-    <urn:uuid:ce9fc20> a odrl:Permission ;
-      odrl:assignee ex:alice ;
-      odrl:action odrl:read ;
-      odrl:target ex:x ;
-      sotw:context <urn:uuid:4b36e4f1-d723-45c5-9e62-479d872f74ab> .
-    
-    <urn:uuid:4b36e4f1-d723-45c5-9e62-479d872f74ab> a odrl:Constraint ;
-      odrl:leftOperand odrl:deliveryChannel ;
-      odrl:operator odrl:eq ;
-      odrl:rightOperand <https://podpro.dev/id> .
