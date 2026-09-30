@@ -6,6 +6,7 @@
 <urn:uuid:6a1153c1-aca7-496a-aba1-0b2561d4555e> a odrl:Set ;
     odrl:uid <urn:uuid:6a1153c1-aca7-496a-aba1-0b2561d4555e> ;
     dct:description "ALICE may READ resource X for an instance of purpose of dpv:AccountManagement." ;
+    dct:source <https://github.com/SolidLabResearch/ODRL-Test-Suite/>;
     odrl:permission <urn:uuid:f0ce2b23-d35c-483c-909a-17c986db5e68> .
 
 <urn:uuid:f0ce2b23-d35c-483c-909a-17c986db5e68> a odrl:Permission ;
