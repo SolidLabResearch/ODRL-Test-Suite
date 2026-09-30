@@ -7,6 +7,6 @@
 @prefix sotw: <https://w3id.org/force/sotw#> .
 
 <urn:uuid:f048231b-b932-4248-a47d-8653a390247b> a sotw:SotW;
-    sotw:context ex:assetCollection .
+    sotw:context ex:x .
 
 ex:x odrl:partOf ex:assetCollection.

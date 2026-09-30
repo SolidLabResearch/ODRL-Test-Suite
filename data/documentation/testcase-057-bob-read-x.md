@@ -44,10 +44,17 @@ ex:assetCollection a odrl:AssetCollection ;
 ```
 ## State of the world
 ```ttl
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
 @prefix ex: <http://example.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 <urn:uuid:116a8435-a356-45f5-a20f-a1e593d4a55d> a <https://w3id.org/force/sotw#SotW> ;
-  <https://w3id.org/force/sotw#context> ex:assetCollection, ex:partyCollection .
+  <https://w3id.org/force/sotw#context> ex:alice, ex:x .
+
+ex:alice a foaf:Person ;
+  odrl:partOf ex:partyCollection .
+
+ex:x odrl:partOf ex:assetCollection .
 ```
 ## Evaluation result: Compliance Report
 ```ttl
